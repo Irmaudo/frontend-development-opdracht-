@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Dazed: https://www.dazeddigital.comlink
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Homepagina
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="Dit is de homepage van de site dazed">
   
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Artikel  
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="Dit is een artikel van de site dazed">
  
 </details>
