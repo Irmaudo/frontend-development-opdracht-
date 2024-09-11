@@ -41,11 +41,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="Dit is de homepage van de site dazed">
   
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="Dit is een artikel van de site dazed">
  
 </details>
 
@@ -59,6 +59,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  aantekeningen voor testen screenreader van dazed:
+- herhaald alles de hele tijd. Bv de link wordt de hele tijd gezegd.
+- Tekst kan beschreven worden in een andere taal.
+- Niet alle afbeeldingen hebben eigen alt. Sommige worden benoemd met cijfers.
+- De tekst wordt in het Nederlands uitgesproken, wanneer het engels is. Waardoor het heel apart klinkt.
+- Wanneer je op een foto met een beschrijving komt, zegt hij alleen een zin en niet de hele tekst. Waardoor je elke keer omhoog of naar beneden moet klikken om alle tekst te horen. En je krijgt niet te horen dat je op de beschrijving kan klikken
 </details>
 
 
