@@ -97,7 +97,10 @@ aantekeningen voor testen screenreader van dazed:
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  
+  Het html opzetten ging vrij goed. Toen ik eenmaal begon had ik al best snel mijn html af, omdat het vooral kopiëren en plakken is van afbeeldingen en tekst van de site. Ook ging de basis van mijn css goed. Alleen waar ik even weer moest nadenken hoe het moest, was bij flexbox. Bv mijn navigatiebar, daarvan was ik vergeten hoe dat moest maar uiteindelijk is het wel gelukt. 
+  
+  Wat alleen nog niet gelukt is is mijn column met buttons. Deze komen nog niet mooi onder/naast elkaar te staan. 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
