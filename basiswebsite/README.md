@@ -240,7 +240,7 @@ aantekeningen voor testen screenreader van dazed:
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1. afbeeldingen en tekst: https://www.dazeddigital.com
   2. bron 2
   3. ...
 
