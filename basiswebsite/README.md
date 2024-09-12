@@ -114,7 +114,7 @@ aantekeningen voor testen screenreader van dazed:
   vragen:
   - Hoe maak ik een verticale lijn
 - hoe zorg ik ervoor dat als je op een button klikt er nieuwe artikelen tevoorschijn komen. 
-- Moeten de buttons in het paarse vlak in in li of alleen button. 
+- Moeten de buttons in het paarse vlak in in li of alleen button. En kan dit makkelijker in mijn code worden gezet.
 - Moet echt alle tekst en articles in mijn site?
 
   ### Verslag van meeting
