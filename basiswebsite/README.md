@@ -111,6 +111,11 @@ aantekeningen voor testen screenreader van dazed:
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+  vragen:
+  - Hoe maak ik een verticale lijn
+- hoe zorg ik ervoor dat als je op een button klikt er nieuwe artikelen tevoorschijn komen. 
+- Moeten de buttons in het paarse vlak in in li of alleen button. 
+- Moet echt alle tekst en articles in mijn site?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
