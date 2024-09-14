@@ -111,14 +111,25 @@ aantekeningen voor testen screenreader van dazed:
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+  vragen:
+
+  - Hoe maak ik een verticale lijn
+
+  - hoe zorg ik ervoor dat als je op een button klikt er nieuwe artikelen tevoorschijn komen.
+
+  - Moeten de buttons in het paarse vlak in in li of alleen button. En kan dit makkelijker in mijn code worden gezet.
+
+  - Moet echt alle tekst en articles in mijn site?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Alle artikelen met een titel bovenaan kan je in een section zetten. Hierbij heb je uiteindelijk allemaal sections. 
+  - de buttons bij het paarse vlak kunnen in een ul en hoeven geen li item
+  - read more button geeft iets van 2 meer artikelen. Dit is te doen door ze in html te zetten maar in js te laten verdwijnen en alleen tevoorschijn te laten komen als er op de button wordt geklikt.
+  - Niet alle tekst en artikelen hoeven op de site. Kies er gewoon een paar max 6 bv.
+  - 2e pagina kan beter een andere kiezen. Omdat deze niet speciaal genoeg is en daardoor niet de criteria gaat voldoen.
+  - classes verwijderen en daarvan met de sections/articles werken
 
 </details>
 

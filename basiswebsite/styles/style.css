@@ -76,6 +76,7 @@ article p {
 	color: white;
 	background-color: black;
 	margin-right: 13em;
+	grid: 1fr 1fr 1fr;
 }
 
 main img {
@@ -123,7 +124,7 @@ li img{
 }
 
 
-button{
+.showMore{
 	display: block;
 	width: 95%;
 	background-color: white;
@@ -145,16 +146,22 @@ button{
 .backgroundcolor ul{
 	display: flex;
 	list-style: none;	
-	margin-left:150px;
+	margin:1em;
+	margin-right: 4em;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .backgroundcolor button{
 	display: flex;
 	justify-content: center;
-	background-color: white;
-	border-color: black;
+	background-color: transparent;
+	border-color: white;
 	text-transform: uppercase;
+	margin: 0.3em;
+	padding: 0.1em;
+	color: white;
+
 }
 
 
@@ -220,4 +227,147 @@ footer p{
 	padding: 5px;
 	text-transform: uppercase;
 	font-size: 13px;
+}
+
+video{
+	width: 23em;
+}
+
+.button100{
+	width: 10em;
+	display: flex;
+	justify-content: center;
+}
+
+.button100 button{
+	font-size: 0.5em;
+	text-transform: uppercase;
+	border-radius: 5em;
+	display: flex;
+	justify-content: center;
+}
+
+li{
+	list-style: none;	
+}
+
+.kolom img{
+	width: 10em;
+}
+
+.kolom{
+	background-color: gray;
+	width: 10em;
+	margin: 0.5em;
+}
+
+.kolom li{
+	background-color: yellow;
+	font-size: 0.6em;
+	border-radius: 2em;
+	border-color: black;
+}
+
+.kolom ul{
+	display: flex;
+	justify-content: center;
+	
+}
+
+.all{
+	display: flex;
+	justify-content: space-around;
+	margin: 0.1em;
+	
+}
+
+h2{
+	display: flex;
+	justify-content: center;
+}
+
+hr{
+	display: flex;
+	justify-content: center;
+	margin: 1em;
+}
+
+.fashion img{
+	width: 10em;
+}
+
+article h3{
+	border-left: solid;
+	margin-left: 0.3em;
+	padding: 0.4em;
+}
+
+.tekstHoek{
+	display: grid;
+	position: relative;
+	
+}
+
+.tekstHoek img{
+	display: block;
+}
+
+.tekstHoek p{
+	position: absolute;
+	padding: 0.3em;
+	margin: 0.35em;
+	width: 7em;
+	display: flex;
+	justify-content: left;
+}
+
+.backgroundcolorBlue{
+	background-color: rgb(128,156,252);
+	color: white;
+}
+
+.backgroundcolorBlue img{
+	width: 21em;
+	display: flex;
+	justify-content: center;
+	margin-left: 0.7em;
+}
+
+.lines{
+	margin: 1em;
+	border-left: solid;
+}
+
+.lines p{
+	border-top: solid;
+	margin: 0.5em;
+	margin-top: 1em;
+}
+
+.showMore{
+	margin-bottom: 2em;
+}
+
+
+.scrolling img{
+	width: 15em;
+	margin: 0.5em;
+	display: flex;
+	justify-content: center;
+}
+
+.scrolling h3{
+	margin: 0.7em;
+	margin-right: 2em;
+	margin-top: -0.7em;
+	font-size: 1em;
+}
+
+.scrolling p{
+	background-color: transparent;
+	color: black;
+}
+
+.scrolling {
+	display: flex;
 }
