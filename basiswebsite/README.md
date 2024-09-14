@@ -112,6 +112,7 @@ aantekeningen voor testen screenreader van dazed:
   | ...            | ...                | ...          | ...              |
 
   vragen:
+<<<<<<< HEAD
 
   - Hoe maak ik een verticale lijn
 
