@@ -371,3 +371,18 @@ article h3{
 .scrolling {
 	display: flex;
 }
+
+.features h4{
+	font-size: 0.9em;
+
+}
+
+.features h3{
+	border-bottom: solid;
+	margin: 1em;
+
+}
+
+.features{
+	text-align: center;
+}
