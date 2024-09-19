@@ -396,9 +396,6 @@ article h3{
 	margin-top: 1em;
 }
 
-
-
-
 /*animatie beauty logo*/
 @keyframes float{
 	0% {
@@ -428,7 +425,6 @@ svg{
 	margin: 1em;
 	width: 90%;
     height: 20px;
-
 }
 
 

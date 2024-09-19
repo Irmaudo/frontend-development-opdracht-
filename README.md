@@ -159,19 +159,20 @@ aantekeningen voor testen screenreader van dazed:
 
   vragen:
   - Mijn scrollbar werkt soms wel en soms niet, hoe zorg ik ervoor dat dit wel de hele tijd werkt?
-  - Footer afbeeldingen staan niet mooi (overlappen elkaar) hoe gebeurt dit niet?
   - Het font wilt het niet doen, hoe werkt het wel?
+  - Hoe kan ik de classes verminderen?
 
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - font via de opdracht die is gegeven proberen te lukken. Als dit echt niet lukt, dan om hulp vragen
-  - De benamingen van de classes anders benoemen (engels of nederlands)
-  - Classes zo min mogelijk gebruiken.
+  - font via de opdracht die is gegeven  proberen in css te zetten. Als dit echt niet lukt, dan om hulp vragen. (te vinden in week 1, werkgroep 1 over typografie).
+  - De benamingen van de classes anders benoemen (engels of nederlands & ook duidelijkere namen geven, want is nu soms nog onduidelijk).
+  - Classes zo min mogelijk gebruiken, doormiddel van nth-of-type, etc.
   - Scrollbar kan zijn dat het niet werkt, omdat het op het hele pagina geconnect staat en niet op het element.
-- 
+  
+
 
 </details>
 
