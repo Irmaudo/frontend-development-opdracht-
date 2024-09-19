@@ -144,7 +144,7 @@ aantekeningen voor testen screenreader van dazed:
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  Ik heb ervoor gekozen om een andere 2e pagian uit te werken. Nu ben ik bezig met Dazed100 pagina. Hierbij heb ik tot nu toe een video , content en youtube video erin gezet. 
+  Ik heb ervoor gekozen om een andere 2e pagina uit te werken, omdat ook uit de feedbacksessie van vorige week uitkwam dat mijn 2e pagina te veel leek op min homepagina waardoor het te eenvoudig is. Daaro ga ik nu de Dazed100 pagina uitwerken. Hiervoor heb ik tot nu toe een video, content en youtube video erin gezet. Verder ben ik een beetje bezig geweest met de css en dus de vormgeving, maar die is nog niet zoals ik wil. 
 
   Maar vooral ben ik deze week bezig geweest met de homepage. Hier heb ik nu alle content en  zowat alle vormgeving (css) af. Alleen nog een paar kleine dingen die niet helemaal willen werken en ik moet nog een oplossing zien te verzinnen van de classes die ik nu gebruik. 
 
