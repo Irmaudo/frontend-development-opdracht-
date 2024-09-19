@@ -20,7 +20,6 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
 
 /****************/
 /* FONTS */
@@ -34,11 +33,10 @@
 @font-face {
 	font-family: 'nimbus';
 	src: url('font/NimbusSanL-Reg.woff2') format('woff2');
+	font-weight: normal;
+    font-style: normal;
 }
 
-h2{
-	font-family: 'nimbus' ;
-}
 /****************/
 /* header */
 /****************/
@@ -62,16 +60,20 @@ h1{
 }
 
 
+
 /****************/
 /* main */
 /****************/
 
 h2{
 	font-size: 2em;
-	margin: 0.1em;
-	padding: 0.1em;
+	width: 8em;
+	display: flex;
+	justify-content: flex-start;
+	margin: 0.5em;
+	margin-bottom: -0.8em;
+	font-family: "nimbus" ;
 }
-
 
 h3{
 	margin: 0.5em;
@@ -102,21 +104,28 @@ li img{
 
 }
 
+li{
+	list-style: none;	
+}
+
 
 /* DAZED CLUB*/
 .dazedClub img {
-	width: 3em;
-}
-
-.dazedClub{
-	display: flex;
-	margin: 1.4em;
+	width: 4em;
 }
 
 .dazedClub p{
 	font-size: 14px;
 	text-align: center;
 }
+
+.dazedClub{
+	margin-top: -1em;
+	margin-bottom: -1em;
+	display: flex;
+	justify-content: center;
+}
+
 
 
 /*mail nieuwsbrief aanmelden*/
@@ -135,6 +144,12 @@ li img{
 	justify-content: center;
 }
 
+.mail p{
+	border: solid;
+	width: 14em;
+	height: 2em;
+	font-size: 0.8em;
+}
 
 .showMore{
 	display: block;
@@ -173,7 +188,7 @@ li img{
 	margin: 0.3em;
 	padding: 0.1em;
 	color: white;
-
+	height: 2em;
 }
 
 
@@ -199,47 +214,7 @@ li img{
 }
 
 
-
-/****************/
-/* footer */
-/****************/
-
-footer{
-	background-color: black;
-	color: white;
-}
-
-footer ul{
-	list-style: none;
-}
-
-footer ul h2{
-	display: flex;
-	justify-content: center;
-	margin-right: 50px;
-	font-size: 100px;
-	text-transform: uppercase;
-}
-
-.socialLinks img{
-	width: 30px;
-	display: flex;
-	
-}
-.socialLinks{
-	display: flex;
-	justify-content: space-around;
-	margin: 50px;
-	margin-top: 0px;
-}
-
-footer p{
-	display: flex;
-	justify-content: center;
-	padding: 5px;
-	text-transform: uppercase;
-	font-size: 13px;
-}
+/* voor 2e pagina */
 
 video{
 	width: 23em;
@@ -257,10 +232,6 @@ video{
 	border-radius: 5em;
 	display: flex;
 	justify-content: center;
-}
-
-li{
-	list-style: none;	
 }
 
 .kolom img{
@@ -293,10 +264,7 @@ li{
 	
 }
 
-h2{
-	display: flex;
-	justify-content: center;
-}
+
 
 hr{
 	display: flex;
@@ -304,9 +272,9 @@ hr{
 	margin: 1em;
 }
 
-.fashion img{
+/*.fashion img{
 	width: 10em;
-}
+}*/
 
 article h3{
 	border-left: solid;
@@ -320,9 +288,9 @@ article h3{
 	
 }
 
-.tekstHoek img{
+/*.tekstHoek img{
 	display: block;
-}
+}*/
 
 .tekstHoek p{
 	position: absolute;
@@ -345,6 +313,7 @@ article h3{
 	margin-left: 0.7em;
 }
 
+/* lines in specifiek artikel met achtergrond kleur */
 .lines{
 	margin: 1em;
 	border-left: solid;
@@ -356,11 +325,13 @@ article h3{
 	margin-top: 1em;
 }
 
+/* showmore */
 .showMore{
 	margin-bottom: 2em;
 }
 
 
+/* scrolling bij magazine en features section*/
 .scrolling img{
 	width: 15em;
 	margin: 0.5em;
@@ -373,17 +344,28 @@ article h3{
 	margin-right: 2em;
 	margin-top: -0.7em;
 	font-size: 1em;
+	width: 15em;
 }
 
 .scrolling p{
 	background-color: transparent;
 	color: black;
+	width: 6em;
+	margin: 0.5em;
+	margin-bottom: -0.8em;
 }
 
-.scrolling {
+.scrolling article{
+	width: 16em;
+}	
+
+.scrolling{
 	display: flex;
+	overflow-x:auto;
 }
 
+
+/* features */
 .features h4{
 	font-size: 0.9em;
 	margin-top: -1em;
@@ -408,17 +390,92 @@ article h3{
 }
 
 
+/* greenshadow van beauty artikelen section */
+.green{
+	box-shadow: 0.0em -0.4em 0em rgb(1, 252, 1);
+	margin-top: 1em;
+}
 
-/* FOOTER */
 
-/*footer ul img{
-	width:12.2em;
-	margin: -1em;
-	margin-top: 0em;
-	height: 9em;
-	opacity: 0.5;
+
+
+/*animatie beauty logo*/
+@keyframes float{
+	0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-0.5em);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.beautyLogo{
+    transform: translateY(0em);
+    animation: float 4s ease-in-out infinite;
+}
+
+.beautyLogo{
+	width: 12em;
+	margin: 1em;
+	margin-left: 5em;
+}
+
+
+/* svg*/
+svg{
+	margin: 1em;
+	width: 90%;
+    height: 20px;
+
+}
+
+
+/****************/
+/* footer */
+/****************/
+
+footer{
+	background-color: black;
+	color: white;
+	margin-left: -1em;
+	margin-right: -0.5em;
+}
+
+footer ul{
+	list-style: none;
+}
+
+footer ul h2{
+	display: flex;
+	justify-content: center;
+	margin-right: 50px;
+	font-size: 100px;
+	text-transform: uppercase;
+
+}
+
+.socialLinks img{
+	width: 30px;
+	display: flex;
 	
-}*/
+}
+.socialLinks{
+	display: flex;
+	justify-content: space-around;
+	margin: 50px;
+	margin-top: 0px;
+}
+
+footer p{
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
 
 footer ul img{
 	width:13.5em;
@@ -452,93 +509,8 @@ footer ul p{
 footer ul h2{
 	display: flex;
 	justify-content: center;
-	margin-left:0em;
-	
-}
-
-footer{
-	background-color: black;
-	margin-left: -1em;
-	margin-right: -0.5em;
-}
-
-.beautyLogo{
-	width: 12em;
-	margin: 1em;
-	margin-left: 5em;
-}
-
-.green{
-	box-shadow: 0.0em -0.4em 0em rgb(1, 252, 1);
-	margin-top: 1em;
-}
-
-.mail p{
-	border: solid;
-	width: 14em;
-	height: 2em;
-	font-size: 0.8em;
-}
-
-.scrolling{
-	display: flex;
-	overflow-x:auto;
-}
-
-@keyframes float{
-	0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-0.5em);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-.beautyLogo{
-    transform: translateY(0em);
-    animation: float 4s ease-in-out infinite;
-}
-
-.scrolling p{
-	width: 6em;
-	margin: 0.5em;
-	margin-bottom: -0.8em;
-}
-
-.scrolling h3{
-	width: 15em;
+	margin:0.5em;
+	margin-left:-2.2em;
 }
 
 
-.scrolling article{
-	width: 16em;
-}
-
-svg{
-	margin: 1em;
-	width: 90%;
-    height: 20px;
-
-}
-
-h2{
-	width: 8em;
-	display: flex;
-	justify-content: flex-start;
-	margin: 0.5em;
-	margin-bottom: -0.8em;
-}
-
-.dazedClub img{
-	width: 4em;
-
-}
-
-.dazedClub{
-	margin-top: -1em;
-	margin-bottom: -1em;
-	display: flex;
-	justify-content: center;
-}

@@ -144,7 +144,9 @@ aantekeningen voor testen screenreader van dazed:
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik heb ervoor gekozen om een andere 2e pagian uit te werken. Nu ben ik bezig met Dazed100 pagina. Hierbij heb ik tot nu toe een video , content en youtube video erin gezet. 
 
+  Maar vooral ben ik deze week bezig geweest met de homepage. Hier heb ik nu alle content en  zowat alle vormgeving (css) af. Alleen nog een paar kleine dingen die niet helemaal willen werken en ik moet nog een oplossing zien te verzinnen van de classes die ik nu gebruik. 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -154,6 +156,11 @@ aantekeningen voor testen screenreader van dazed:
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+  vragen:
+  - Mijn scrollbar werkt soms wel en soms niet, hoe zorg ik ervoor dat dit wel de hele tijd werkt?
+  - Footer afbeeldingen staan niet mooi (overlappen elkaar) hoe gebeurt dit niet?
+  
 
 
   ### Verslag van meeting
