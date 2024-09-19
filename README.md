@@ -160,7 +160,8 @@ aantekeningen voor testen screenreader van dazed:
   vragen:
   - Mijn scrollbar werkt soms wel en soms niet, hoe zorg ik ervoor dat dit wel de hele tijd werkt?
   - Footer afbeeldingen staan niet mooi (overlappen elkaar) hoe gebeurt dit niet?
-  
+  - Het font wilt het niet doen, hoe werkt het wel?
+
 
 
   ### Verslag van meeting
