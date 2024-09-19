@@ -167,10 +167,11 @@ aantekeningen voor testen screenreader van dazed:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - font via de opdracht die is gegeven proberen te lukken. Als dit echt niet lukt, dan om hulp vragen
+  - De benamingen van de classes anders benoemen (engels of nederlands)
+  - Classes zo min mogelijk gebruiken.
+  - Scrollbar kan zijn dat het niet werkt, omdat het op het hele pagina geconnect staat en niet op het element.
+- 
 
 </details>
 
