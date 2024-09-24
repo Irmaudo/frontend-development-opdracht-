@@ -169,8 +169,8 @@ aantekeningen voor testen screenreader van dazed:
 
   - font via de opdracht die is gegeven  proberen in css te zetten. Als dit echt niet lukt, dan om hulp vragen. (te vinden in week 1, werkgroep 1 over typografie).
   - De benamingen van de classes anders benoemen (engels of nederlands & ook duidelijkere namen geven, want is nu soms nog onduidelijk).
-  - Classes zo min mogelijk gebruiken, doormiddel van nth-of-type, etc.
-  - Scrollbar kan zijn dat het niet werkt, omdat het op het hele pagina geconnect staat en niet op het element.
+  - Classes zo min mogelijk gebruiken, doormiddel van nth-of-type, nth-of-child etc.
+  - Scrollbar kan zijn dat het niet werkt, omdat het op de hele pagina geconnect staat en niet op het element.
   
 
 

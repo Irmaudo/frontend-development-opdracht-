@@ -26,17 +26,21 @@
 /****************/
 
 @font-face {
-	font-family: republica;
-	src: url(fonts/republicaMinor.otf);
+	font-family: "PLZ";
+	src: url("/Frontend-Development/basiswebsite/font/PLZ.woff2");
 }
 
 @font-face {
 	font-family: 'nimbus';
-	src: url('font/NimbusSanL-Reg.woff2') format('woff2');
+	src: url('/Frontend-Development/basiswebsite/font/NimbusSanL-Reg.woff2') format('woff2');
 	font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+	font-family: 'stretchPro';
+	src: url('/Frontend-Development/basiswebsite/font/StretchPro.woff2') format('woff2');
+}
 /****************/
 /* header */
 /****************/
@@ -44,6 +48,10 @@
 header{
 	display: flex;
 	justify-content: center;
+	width: 20em;
+	margin: 3em;
+	margin-bottom: -2em;
+	margin-left: 1em;
 }
 
 nav ul{
@@ -55,15 +63,31 @@ nav ul{
 	justify-content: space-between;
 }
 
-h1{
-	font-family: "replubica";
+h2:nth-of-type(1){
+	margin-bottom: 0.5em;
 }
 
+header svg{
+	display: flex;
+	width: 1em;
+}
 
+h1{
+	font-size: 1.7em;
+	margin: 1em;
+}
+
+h1{
+	font-family: 'stretchPro'
+}
 
 /****************/
 /* main */
 /****************/
+
+p {
+	font-family: "nimbus" ;
+}
 
 h2{
 	font-size: 2em;
@@ -72,7 +96,7 @@ h2{
 	justify-content: flex-start;
 	margin: 0.5em;
 	margin-bottom: -0.8em;
-	font-family: "nimbus" ;
+	
 }
 
 h3{
@@ -83,6 +107,7 @@ h3{
 p{
 	margin: 0.4em;
 	padding: 0.1em;
+	font-size: 1em;
 }
 
 
@@ -166,11 +191,11 @@ li{
 
 /*columns met allemaal verschillende artikelen scrollen/klikken*/ 
 
-.backgroundcolor{
+.changingColumn{
 	background-color: #9260DEff;
 }
 
-.backgroundcolor ul{
+.changingColumn ul{
 	display: flex;
 	list-style: none;	
 	margin:1em;
@@ -179,7 +204,7 @@ li{
 	flex-wrap: wrap;
 }
 
-.backgroundcolor button{
+.changingColumn button{
 	display: flex;
 	justify-content: center;
 	background-color: transparent;
@@ -192,23 +217,23 @@ li{
 }
 
 
-.column{
+.columns{
 	margin: 35px;
 	background-color: white;
 	
 }
 
-.column h3, p{
+.columns h3, p{
 	display: flex;
 	justify-content: center;
 	margin: 1em;
 }
 
-.column img{
+.columns img{
 	width: 18em;
 }
 
-.column hr{
+.columns hr{
 	width: 5em;
 
 }
@@ -217,7 +242,12 @@ li{
 /* voor 2e pagina */
 
 video{
-	width: 23em;
+	width: 23.5em;
+	margin-left: -0.5em;
+}
+
+iframe{
+	margin-left: -0.5em;
 }
 
 .button100{
@@ -234,34 +264,40 @@ video{
 	justify-content: center;
 }
 
-.kolom img{
-	width: 10em;
+.column img{
+	width: 11em;
 }
 
-.kolom{
-	background-color: gray;
+.column{
 	width: 10em;
-	margin: 0.5em;
+	margin: 0.2em;
 }
 
-.kolom li{
-	background-color: yellow;
-	font-size: 0.6em;
+.column li{
+	font-size: 0.7em;
 	border-radius: 2em;
 	border-color: black;
+	display: flex;
+	align-items: center;
+	margin: 0.2em;
 }
 
-.kolom ul{
+.column ul{
 	display: flex;
-	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	margin-left: -2em;
+	height: 3em;
 	
 }
 
-.all{
+
+.dazed100AllColumns{
 	display: flex;
 	justify-content: space-around;
 	margin: 0.1em;
-	
+	flex-wrap: wrap;
+	margin-left: -1em;
 }
 
 
@@ -282,7 +318,7 @@ article h3{
 	padding: 0.4em;
 }
 
-.tekstHoek{
+.textCorner{
 	display: grid;
 	position: relative;
 	
@@ -292,7 +328,7 @@ article h3{
 	display: block;
 }*/
 
-.tekstHoek p{
+.textCorner p{
 	position: absolute;
 	padding: 0.3em;
 	margin: 0.35em;
@@ -350,16 +386,18 @@ article h3{
 .scrolling p{
 	background-color: transparent;
 	color: black;
-	width: 6em;
-	margin: 0.5em;
+	width: 10em;
+	margin: 0.9em;
 	margin-bottom: -0.8em;
+	font-family: 'stretchPro';
+	font-size: 0.7em;
 }
 
 .scrolling article{
 	width: 16em;
 }	
 
-.scrolling{
+.scrolling {
 	display: flex;
 	overflow-x:auto;
 }
@@ -510,3 +548,252 @@ footer ul h2{
 }
 
 
+/* dazed 100 */
+
+.dazed100Title h2 {
+	font-family: "nimbus" ;
+	font-size: 3em;
+	display: flex;
+	justify-content: center;
+	margin-left: -0.3em;
+	padding-bottom: 0.5em;
+}
+
+.dazed100Title p{
+	display: flex;
+	text-align: center;
+	font-size: 1.3em;
+	margin: 0.8em;
+
+}
+
+.buttonPage100 button{
+	background-color: white;
+	height: 3em;
+	font-size: 1em;
+	text-transform: uppercase;
+	border-radius: 1em;
+	display: flex;
+	align-items: center;
+	margin: 0.2em;
+}
+
+.buttonPage100{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-left: -2.3em;
+}
+
+button:nth-of-type(7) {
+	background-color: rgb(0, 0, 0);
+	color: white;
+}
+
+button:nth-of-type(7):hover{
+	background-color: rgb(122, 198, 249);
+}
+
+button:hover{
+	background-color: black;
+	color: white;
+}
+
+.dazed1002023{
+	font-family: "nimbus" ;
+	font-size: 2em;
+	display: flex;
+	justify-content: center;
+	margin-left: 1.5em;
+	padding: 0.3em
+}
+
+/*.dazed100AllColumns img{
+	width: 11em;
+}
+
+.dazed100AllColumns li{
+	width: 10em;
+	font-size: 0.7em;
+	border-radius: 10em;
+	border-color: black;
+	display: flex;
+	margin-left: -3em;
+}
+
+.dazed100AllColumns h3{
+	margin-left: -3em;
+}
+
+.dazed100AllColumns p{
+	margin-left: -5.5em;
+}
+
+
+.dazed100AllColumns{
+	background-color: aquamarine;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -2.54em;
+
+}
+
+*/
+
+
+.off-screen-menu{
+	background-color: black;
+	color: white;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	max-width: 18em;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    transition: .3s ease;
+
+}
+
+.off-screen-menu.active {
+ 	right: 0;
+}
+
+
+.menuIcon{
+	position: relative;
+}
+
+body {
+	background-color: white;
+	color: black;
+}
+
+@keyframes dark-mode-animation{
+	0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.dark-mode {
+	background-color: black;
+	color: white;
+  }
+
+.darkModeToggle{
+	background-color: rgb(21, 255, 0);
+	border-radius: 2em;
+	margin-left: 20em;
+}
+
+.darkModeToggle:hover{
+	animation: dark-mode-animation 0.5s ease-out ;
+}
+
+.changingColumn h3  {
+	display: flex;
+	text-align: center;
+}
+
+.changingColumn p{
+	font-size: 0.8em;
+	margin: 3em;
+	padding-bottom: 2em;
+	display: flex;
+	text-align: center;
+}
+
+.changingColumn hr{
+	width: 90%;
+}
+
+.changingColumn button{
+	border-color: white;
+	font-family: 'stretchPro';
+	font-size: 0.7em;
+	padding: 1.2em;
+	align-items: center;
+}
+
+.changingButton{
+	background-color: rgb(255, 255, 255);
+	color: black;
+}
+
+.backgroundcolorRed{
+	background-color: rgb(244, 97, 71);
+	color: white;
+}
+
+.backgroundcolorRed img{
+	width: 21em;
+	display: flex;
+	justify-content: center;
+	margin-left: 0.7em;
+}
+
+.throughArticles {
+	display: flex;
+	justify-content: center;
+	margin-left: 2em;
+}
+
+/*columns 2th pagina*/
+
+.column li:nth-of-type(1){
+	background-color: rgb(247, 85, 225);
+}
+
+.column li:nth-of-type(2){
+	background-color: rgb(68, 130, 254);
+}
+
+.column li:nth-of-type(3){
+	background-color: rgb(76, 188, 59);
+}
+
+.column li {
+	color: white;
+}
+
+.column li:nth-of-type(4){
+	background-color: rgb(255, 255, 255);
+	color: black;
+}
+
+
+
+.off-screen-search{
+	background-color: #000000;
+	color: white;
+	height: 2em;
+	width: 100%;
+	display: flex;
+	max-width: 18em;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+    transition: .3s ease;
+
+}
+
+.off-screen-search.active {
+ 	right: 0;
+}
