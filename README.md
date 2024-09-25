@@ -187,6 +187,21 @@ aantekeningen voor testen screenreader van dazed:
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - Niet genoeg informatie over images, zegt screenreader (later geeft de screenreader dit niet meer aan)
+  - De svgs worden genoemd als afbeeldingen en hebben geen alt-tekst. Ik moet dus nog bij mijn svgs alt toevoegen.
+  - Kan niet op knop klikken, krijgt alleen te horen dat je erop kan klikken als je ook daadwerkelijk op de button klikt en niet als je eroverheen scrolt. 
+  - De screenreader skipt de video die je in het begin ziet op de 2e pagina. Hij noemt het niet op.
+  - Je krijgt een alt tekst van de video te horen en kan de link openen doormiddel van control, option en spatie.
+  - Alle images hebben een alt-tekst en worden ook door de screenreader benoemd.
+
+
+
+
+
+
+
+
+
 
 </details>
 

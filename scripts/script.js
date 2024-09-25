@@ -10,19 +10,9 @@ hamburgerMenu.addEventListener('click', ()  => {
     offScreenMenu.classList.toggle('active');
 })
 
-function displayText() {
-    var text = document.querySelector(".textField");
-    text.style.display = "block";
-}
-
-function displayText2() {
-    var text = document.querySelector(".newArticle");
-    text.style.display = "block";
-}
-
 document.addEventListener("DOMContentLoaded", function() {
-    var toggleButton = document.querySelector(".darkModeToggle");
-    var bodyElement = document.body;
+    const toggleButton = document.querySelector(".darkModeToggle");
+    const bodyElement = document.body;
 
     toggleButton.addEventListener("click", function() {
         bodyElement.classList.toggle("dark-mode");
@@ -30,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    var articleChangingButton = document.querySelector(".changingColumn button");
+    const articleChangingButton = document.querySelector(".changingColumn button");
 
     articleChangingButton.addEventListener("click", function() {
         bodyElement.classList.toggle(".changingButton");
@@ -39,10 +29,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 const searchMenu = document.querySelector('.searchIcon');
-
 const offScreenSearch = document.querySelector('.off-screen-search');
 
 searchMenu.addEventListener('click', ()  => {
     searchMenu.classList.toggle('active');
     offScreenSearch.classList.toggle('active');
 })
+
+
+const showMoreButton = document.querySelector(".showMore");
+const showMoreButton2 = document.querySelector(".showMore2");
+
+function displayText() {
+    const text = document.querySelector(".textField");
+    text.style.display = "block"; 
+}
+
+
+function displayText2() {
+    const text = document.querySelector(".newArticle");
+    text.style.display = "block"; 
+}
+
+
+
+showMoreButton.addEventListener("click", displayText);
+showMoreButton2.addEventListener("click", displayText2);

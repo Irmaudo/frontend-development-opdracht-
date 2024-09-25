@@ -63,6 +63,7 @@ nav ul{
 	justify-content: space-between;
 }
 
+
 h2:nth-of-type(1){
 	margin-bottom: 0.5em;
 }
@@ -176,7 +177,7 @@ li{
 	font-size: 0.8em;
 }
 
-.showMore{
+.showMore, .showMore2{
 	display: block;
 	width: 95%;
 	background-color: white;
@@ -187,6 +188,7 @@ li{
 	box-shadow: 0.2em 0.3em lightgray ;
 	text-transform: uppercase;
 }
+
 
 
 /*columns met allemaal verschillende artikelen scrollen/klikken*/ 
@@ -608,38 +610,6 @@ button:hover{
 	padding: 0.3em
 }
 
-/*.dazed100AllColumns img{
-	width: 11em;
-}
-
-.dazed100AllColumns li{
-	width: 10em;
-	font-size: 0.7em;
-	border-radius: 10em;
-	border-color: black;
-	display: flex;
-	margin-left: -3em;
-}
-
-.dazed100AllColumns h3{
-	margin-left: -3em;
-}
-
-.dazed100AllColumns p{
-	margin-left: -5.5em;
-}
-
-
-.dazed100AllColumns{
-	background-color: aquamarine;
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: -2.54em;
-
-}
-
-*/
-
 
 .off-screen-menu{
 	background-color: black;
@@ -750,7 +720,7 @@ body {
 	margin-left: 2em;
 }
 
-/*columns 2th pagina*/
+/*columns 2e pagina*/
 
 .column li:nth-of-type(1){
 	background-color: rgb(247, 85, 225);
@@ -796,4 +766,70 @@ body {
 
 .off-screen-search.active {
  	right: 0;
+}
+
+h2:nth-of-type(2){
+	position: relative;
+	top: -0.8em;
+}
+
+.changingColumn ul{
+	position: relative;
+	top: 1em;
+}
+
+.backgroundcolorBlue img{
+	position: relative;
+	top: 0.5em;
+}
+
+.lines{
+	position: relative;
+	top: -0.2em;
+}
+
+.backgroundcolorRed img{
+	position: relative;
+	top: 0.5em;
+	
+}
+
+button{
+	position: relative;
+	bottom: 0.5em;
+	
+}
+
+.articleCarrousel {
+	margin: 0; 
+	padding: 0;
+	list-style: none;
+	display: flex;
+	  
+	 /* handmatig scrollen is mogelijk */
+	overflow-x: scroll;
+	overflow-y: hidden;
+	/* snappen als er gescrolled wordt - andere helft bij li */
+	scroll-snap-type: inline mandatory;
+	/* smooth als met js gescrolled wordt */
+	scroll-behavior: smooth;
+  /* scrollbar zoveel mogelijk verbergen */
+  -webkit-overflow-scrolling: touch; /* voor iOS*/
+  -ms-overflow-style: none; /* voor IE */
+	scrollbar-width: none; /* voor firefox */
+	
+	/* indien het einde of het begin van de pagina bereikt is met scrollen */
+	/* voorkomen dat de pagina gaat scrollen */
+	overscroll-behavior: contain auto;
+	  
+}
+
+.articleCarrousel > -webkit-scrollbar {
+	/* scrollbar zoveel mogelijk verbergen */
+	display: none; /* voor chrome, safari en edge*/
+}
+
+.articleCarrousel p{
+	background-color: white;
+	color: black;
 }
