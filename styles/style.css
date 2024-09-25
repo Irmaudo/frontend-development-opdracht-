@@ -27,19 +27,19 @@
 
 @font-face {
 	font-family: "PLZ";
-	src: url("/Frontend-Development/basiswebsite/font/PLZ.woff2");
+	src: url("/font/PLZ.woff2");
 }
 
 @font-face {
 	font-family: 'nimbus';
-	src: url('/Frontend-Development/basiswebsite/font/NimbusSanL-Reg.woff2') format('woff2');
+	src: url('/font/NimbusSanL-Reg.woff2') format('woff2');
 	font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
 	font-family: 'stretchPro';
-	src: url('/Frontend-Development/basiswebsite/font/StretchPro.woff2') format('woff2');
+	src: url('/font/StretchPro.woff2') format('woff2');
 }
 /****************/
 /* header */
@@ -767,6 +767,7 @@ body {
 .off-screen-search.active {
  	right: 0;
 }
+<<<<<<< HEAD
 
 h2:nth-of-type(2){
 	position: relative;
@@ -833,3 +834,5 @@ button{
 	background-color: white;
 	color: black;
 }
+=======
+>>>>>>> c0250ce310d43ea869c8efa92267dbf18dd782ad
