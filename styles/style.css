@@ -10,15 +10,12 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--font-size-large: 1.7em;
+	--font-size-medium: 1.3em;
+	--font-size-small: 1em;
 }
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
 
 
 /****************/
@@ -41,8 +38,10 @@
 	font-family: 'stretchPro';
 	src: url('/Frontend-Development/basiswebsite/font/StretchPro.woff2') format('woff2');
 }
+
+
 /****************/
-/* header */
+/* HEADER */
 /****************/
 
 header{
@@ -57,15 +56,15 @@ header{
 nav ul{
 	display: flex;
 	list-style: none;
-	margin: 0;
 	padding: 0;
 	align-items: center;
 	justify-content: space-between;
 }
 
-
-h2:nth-of-type(1){
-	margin-bottom: 0.5em;
+h1{
+	font-family: 'stretchPro';
+	font-size: var(--font-size-large);
+	margin: 1em;
 }
 
 header svg{
@@ -73,22 +72,14 @@ header svg{
 	width: 1em;
 }
 
-h1{
-	font-size: 1.7em;
-	margin: 1em;
-}
-
-h1{
-	font-family: 'stretchPro'
-}
-
 /****************/
-/* main */
+/* MAIN */
 /****************/
 
-p {
-	font-family: "nimbus" ;
+h2:nth-of-type(1){
+	margin-bottom: 0.5em;
 }
+
 
 h2{
 	font-size: 2em;
@@ -106,11 +97,16 @@ h3{
 }
 
 p{
+	font-family: "nimbus" ;
 	margin: 0.4em;
 	padding: 0.1em;
-	font-size: 1em;
+	font-size: var(--font-size-small);
 }
 
+h2:nth-of-type(2){
+	position: relative;
+	top: -0.8em;
+}
 
 article p {
 	color: white;
@@ -119,23 +115,53 @@ article p {
 	grid: 1fr 1fr 1fr;
 }
 
+
 main img {
 	width: 22em;
 	padding: 5px;
 }
 
+article h3{
+	border-left: solid;
+	margin-left: 0.3em;
+	padding: 0.4em;
+}
+
+svg{
+	margin: 1em;
+	width: 90%;
+    height: 20px;
+}
+
+/* ALL THE HORIZONTAL LINES */
+hr{
+	display: flex;
+	justify-content: center;
+	margin: 1em;
+}
+
+button{
+	position: relative;
+	bottom: 0.5em;
+	
+}
+
+
+/****************/
+/* LISTS AND ITEMS */
+/****************/
+
+li{
+	list-style: none;	
+}
 
 li img{
 	width: 2.5em;
 
 }
 
-li{
-	list-style: none;	
-}
-
-
 /* DAZED CLUB*/
+
 .dazedClub img {
 	width: 4em;
 }
@@ -152,9 +178,8 @@ li{
 	justify-content: center;
 }
 
+/* MAIL REGISTER  */
 
-
-/*mail nieuwsbrief aanmelden*/
 .mail button{
 	border-radius: 30px;
 	color: white;
@@ -177,6 +202,8 @@ li{
 	font-size: 0.8em;
 }
 
+/* SHOWMORE BUTTONS */
+
 .showMore, .showMore2{
 	display: block;
 	width: 95%;
@@ -189,9 +216,11 @@ li{
 	text-transform: uppercase;
 }
 
+.showMore{
+	margin-bottom: 2em;
+}
 
-
-/*columns met allemaal verschillende artikelen scrollen/klikken*/ 
+/* COLUMNS WITH ALL SORTS OF ARTICLE SCROLLS/CLICKS */ 
 
 .changingColumn{
 	background-color: #9260DEff;
@@ -218,7 +247,6 @@ li{
 	height: 2em;
 }
 
-
 .columns{
 	margin: 35px;
 	background-color: white;
@@ -241,8 +269,9 @@ li{
 }
 
 
-/* voor 2e pagina */
+/* FOR 2TH PAGE */
 
+/* VIDEOS */
 video{
 	width: 23.5em;
 	margin-left: -0.5em;
@@ -251,6 +280,8 @@ video{
 iframe{
 	margin-left: -0.5em;
 }
+
+/* BUTTON */
 
 .button100{
 	width: 10em;
@@ -265,6 +296,8 @@ iframe{
 	display: flex;
 	justify-content: center;
 }
+
+/* COLUMNS WITH THE ARTISTS */
 
 .column img{
 	width: 11em;
@@ -293,7 +326,6 @@ iframe{
 	
 }
 
-
 .dazed100AllColumns{
 	display: flex;
 	justify-content: space-around;
@@ -303,254 +335,7 @@ iframe{
 }
 
 
-
-hr{
-	display: flex;
-	justify-content: center;
-	margin: 1em;
-}
-
-/*.fashion img{
-	width: 10em;
-}*/
-
-article h3{
-	border-left: solid;
-	margin-left: 0.3em;
-	padding: 0.4em;
-}
-
-.textCorner{
-	display: grid;
-	position: relative;
-	
-}
-
-/*.tekstHoek img{
-	display: block;
-}*/
-
-.textCorner p{
-	position: absolute;
-	padding: 0.3em;
-	margin: 0.35em;
-	width: 7em;
-	display: flex;
-	justify-content: left;
-}
-
-.backgroundcolorBlue{
-	background-color: rgb(128,156,252);
-	color: white;
-}
-
-.backgroundcolorBlue img{
-	width: 21em;
-	display: flex;
-	justify-content: center;
-	margin-left: 0.7em;
-}
-
-/* lines in specifiek artikel met achtergrond kleur */
-.lines{
-	margin: 1em;
-	border-left: solid;
-}
-
-.lines p{
-	border-top: solid;
-	margin: 0.5em;
-	margin-top: 1em;
-}
-
-/* showmore */
-.showMore{
-	margin-bottom: 2em;
-}
-
-
-/* scrolling bij magazine en features section*/
-.scrolling img{
-	width: 15em;
-	margin: 0.5em;
-	display: flex;
-	justify-content: center;
-}
-
-.scrolling h3{
-	margin: 0.7em;
-	margin-right: 2em;
-	margin-top: -0.7em;
-	font-size: 1em;
-	width: 15em;
-}
-
-.scrolling p{
-	background-color: transparent;
-	color: black;
-	width: 10em;
-	margin: 0.9em;
-	margin-bottom: -0.8em;
-	font-family: 'stretchPro';
-	font-size: 0.7em;
-}
-
-.scrolling article{
-	width: 16em;
-}	
-
-.scrolling {
-	display: flex;
-	overflow-x:auto;
-}
-
-
-/* features */
-.features h4{
-	font-size: 0.9em;
-	margin-top: -1em;
-}
-
-.features h3{
-	border-bottom: solid;
-	margin: 1em;
-	border-left: white;
-
-}
-
-.features{
-	text-align: center;
-}
-
-.features h2{
-	margin-bottom: 0.5em;
-	display: flex;
-	justify-content: center;
-	margin-left: 1.5em;
-}
-
-
-/* greenshadow van beauty artikelen section */
-.green{
-	box-shadow: 0.0em -0.4em 0em rgb(1, 252, 1);
-	margin-top: 1em;
-}
-
-/*animatie beauty logo*/
-@keyframes float{
-	0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-0.5em);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-.beautyLogo{
-    transform: translateY(0em);
-    animation: float 4s ease-in-out infinite;
-}
-
-.beautyLogo{
-	width: 12em;
-	margin: 1em;
-	margin-left: 5em;
-}
-
-
-/* svg*/
-svg{
-	margin: 1em;
-	width: 90%;
-    height: 20px;
-}
-
-
-/****************/
-/* footer */
-/****************/
-
-footer{
-	background-color: black;
-	color: white;
-	margin-left: -1em;
-	margin-right: -0.5em;
-}
-
-footer ul{
-	list-style: none;
-}
-
-footer ul h2{
-	display: flex;
-	justify-content: center;
-	margin-right: 50px;
-	font-size: 100px;
-	text-transform: uppercase;
-
-}
-
-.socialLinks img{
-	width: 30px;
-	display: flex;
-	
-}
-.socialLinks{
-	display: flex;
-	justify-content: space-around;
-	margin: 50px;
-	margin-top: 0px;
-}
-
-footer p{
-	display: flex;
-	justify-content: center;
-	padding: 5px;
-	text-transform: uppercase;
-	font-size: 13px;
-}
-
-
-footer ul img{
-	width:13.5em;
-	margin: 0;
-	margin-left:-2em;
-	margin-top: 0em;
-	height: 9em;
-	opacity: 0.5;
-
-}
-
-footer ul{
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	left: 1em;
-	margin:0;
-	padding: 0;
-}
-
-footer ul p{
-	position: absolute;
-	margin-top: -6em;
-	margin-left: 4.5em;
-	width: 2em;
-	display: flex;
-	justify-content: center;
-	font-size: 1em;
-}
-
-footer ul h2{
-	display: flex;
-	justify-content: center;
-	margin:0.5em;
-	margin-left:-2.2em;
-}
-
-
-/* dazed 100 */
+/* DAZED 100 TEXT */
 
 .dazed100Title h2 {
 	font-family: "nimbus" ;
@@ -569,6 +354,7 @@ footer ul h2{
 
 }
 
+/* BUTTONS FOR THE 2TH PAGE */
 .buttonPage100 button{
 	background-color: white;
 	height: 3em;
@@ -610,66 +396,93 @@ button:hover{
 	padding: 0.3em
 }
 
-
-.off-screen-menu{
-	background-color: black;
-	color: white;
-	height: 100vh;
-	width: 100%;
+.throughArticles {
 	display: flex;
-	max-width: 18em;
-    position: fixed;
-    top: 0;
-    right: -450px;
-    flex-direction: column;
-    align-items: center;    
-    justify-content: center;
-    text-align: center;
-    font-size: 2rem;
-    transition: .3s ease;
-
+	justify-content: center;
+	margin-left: 2em;
 }
 
-.off-screen-menu.active {
- 	right: 0;
+/* COLUMNS (COLOR BUTTONS) 2TH PAGE */
+
+.column li:nth-of-type(1){
+	background-color: rgb(247, 85, 225);
 }
 
-
-.menuIcon{
-	position: relative;
+.column li:nth-of-type(2){
+	background-color: rgb(68, 130, 254);
 }
 
-body {
-	background-color: white;
+.column li:nth-of-type(3){
+	background-color: rgb(76, 188, 59);
+}
+
+.column li {
+	color: white;
+}
+
+.column li:nth-of-type(4){
+	background-color: rgb(255, 255, 255);
 	color: black;
 }
 
-@keyframes dark-mode-animation{
-	0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
+
+
+
+
+
+/* THE CORNER OF THE ARTICLES WITH THE GENRE "MUSIC" FOR EXAMPLE */
+.textCorner{
+	display: grid;
+	position: relative;
+	
 }
 
+.textCorner p{
+	position: absolute;
+	padding: 0.3em;
+	margin: 0.35em;
+	width: 7em;
+	display: flex;
+	justify-content: left;
+}
 
-.dark-mode {
-	background-color: black;
+/* SPECIAL ARTICLE WITH OTHER BACKGROUNDS */
+/* MOET DEZE CLASS NAAM VERANDEREN!! */
+/* BLUE ARTICLE */
+.backgroundcolorBlue{
+	background-color: rgb(128,156,252);
 	color: white;
-  }
-
-.darkModeToggle{
-	background-color: rgb(21, 255, 0);
-	border-radius: 2em;
-	margin-left: 20em;
 }
 
-.darkModeToggle:hover{
-	animation: dark-mode-animation 0.5s ease-out ;
+.backgroundcolorBlue img{
+	width: 21em;
+	display: flex;
+	justify-content: center;
+	margin-left: 0.7em;
+	position: relative;
+	top: 0.5em;
+	
+}
+
+/* RED ARTICLE */
+.backgroundcolorRed{
+	background-color: rgb(244, 97, 71);
+	color: white;
+}
+
+.backgroundcolorRed img{
+	width: 21em;
+	display: flex;
+	justify-content: center;
+	margin-left: 0.7em;
+	position: relative;
+	top: 0.5em;
+}
+
+
+.changingColumn ul{
+	position: relative;
+	top: 1em;
 }
 
 .changingColumn h3  {
@@ -702,49 +515,174 @@ body {
 	color: black;
 }
 
-.backgroundcolorRed{
-	background-color: rgb(244, 97, 71);
-	color: white;
+/* LINES THAT ARE IN SPECIAL ARTICLE ^ */
+.lines{
+	margin: 1em;
+	border-left: solid;
+	position: relative;
+	top: -0.2em;
 }
 
-.backgroundcolorRed img{
-	width: 21em;
+
+.lines p{
+	border-top: solid;
+	margin: 0.5em;
+	margin-top: 1em;
+}
+
+
+/* SCROLLING THROUGH MAGAZINE AND FEATURES SECTION */
+.scrolling img{
+	width: 15em;
+	margin: 0.5em;
 	display: flex;
 	justify-content: center;
-	margin-left: 0.7em;
 }
 
-.throughArticles {
-	display: flex;
-	justify-content: center;
-	margin-left: 2em;
+.scrolling h3{
+	margin: 0.7em;
+	margin-right: 2em;
+	margin-top: -0.7em;
+	font-size: 1em;
+	width: 15em;
 }
 
-/*columns 2e pagina*/
-
-.column li:nth-of-type(1){
-	background-color: rgb(247, 85, 225);
-}
-
-.column li:nth-of-type(2){
-	background-color: rgb(68, 130, 254);
-}
-
-.column li:nth-of-type(3){
-	background-color: rgb(76, 188, 59);
-}
-
-.column li {
-	color: white;
-}
-
-.column li:nth-of-type(4){
-	background-color: rgb(255, 255, 255);
+.scrolling p{
+	background-color: transparent;
 	color: black;
+	width: 10em;
+	margin: 0.9em;
+	margin-bottom: -0.8em;
+	font-family: 'stretchPro';
+	font-size: 0.7em;
+}
+
+.scrolling article{
+	width: 16em;
+}	
+
+.scrolling {
+	display: flex;
+	overflow-x:auto;
+}
+
+
+/* FEATURE SECTION */
+
+.features{
+	text-align: center;
+}
+
+.features h2{
+	margin-bottom: 0.5em;
+	display: flex;
+	justify-content: center;
+	margin-left: 1.5em;
+}
+
+.features h3{
+	border-bottom: solid;
+	margin: 1em;
+	border-left: white;
+}
+
+.features h4{
+	font-size: 0.9em;
+	margin-top: -1em;
+}
+
+
+/* GREENSHADOW OF BEAUTY SECTION */
+/* NAAM VERANDEREN VAN DEZE CLASS !! */
+.green{
+	box-shadow: 0.0em -0.4em 0em rgb(1, 252, 1);
+	margin-top: 1em;
+}
+
+/****************/
+/* ANIMATION */
+/****************/
+
+@keyframes float{
+	0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-0.5em);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes dark-mode-animation{
+	0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* BEAUTY LOGO FLOATING */
+.beautyLogo{
+    transform: translateY(0em);
+    animation: float 4s ease-in-out infinite;
+}
+
+.beautyLogo{
+	width: 12em;
+	margin: 1em;
+	margin-left: 5em;
+}
+
+
+/* DARK-MODE */
+.darkModeToggle:hover{
+	animation: dark-mode-animation 0.5s ease-out ;
+}
+
+.dark-mode {
+	background-color: black;
+	color: white;
+  }
+
+.darkModeToggle{
+	background-color: rgb(21, 255, 0);
+	border-radius: 2em;
+	margin-left: 20em;
 }
 
 
 
+/* HAMBURGER MENU WHEN ITS NOT CLICKED (NOT VISIBLE) */
+.off-screen-menu{
+	background-color: black;
+	color: white;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	max-width: 18em;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    transition: .3s ease;
+
+}
+
+.off-screen-menu.active {
+ 	right: 0;
+}
+
+/* SEARCH BAR WHEN ITS NOT CLICKED (NOT VISIBLE) */
 .off-screen-search{
 	background-color: #000000;
 	color: white;
@@ -767,46 +705,15 @@ body {
 .off-screen-search.active {
  	right: 0;
 }
-<<<<<<< HEAD
 
-h2:nth-of-type(2){
-	position: relative;
-	top: -0.8em;
-}
+/* CAROUSEL */
 
-.changingColumn ul{
-	position: relative;
-	top: 1em;
-}
-
-.backgroundcolorBlue img{
-	position: relative;
-	top: 0.5em;
-}
-
-.lines{
-	position: relative;
-	top: -0.2em;
-}
-
-.backgroundcolorRed img{
-	position: relative;
-	top: 0.5em;
-	
-}
-
-button{
-	position: relative;
-	bottom: 0.5em;
-	
-}
-
+/* dit heb ik van caroussel link van teams*/
 .articleCarrousel {
-	margin: 0; 
+	margin: 0 ; 
 	padding: 0;
 	list-style: none;
 	display: flex;
-	  
 	 /* handmatig scrollen is mogelijk */
 	overflow-x: scroll;
 	overflow-y: hidden;
@@ -822,17 +729,115 @@ button{
 	/* indien het einde of het begin van de pagina bereikt is met scrollen */
 	/* voorkomen dat de pagina gaat scrollen */
 	overscroll-behavior: contain auto;
+	width: 20em;
 	  
-}
-
-.articleCarrousel > -webkit-scrollbar {
-	/* scrollbar zoveel mogelijk verbergen */
-	display: none; /* voor chrome, safari en edge*/
 }
 
 .articleCarrousel p{
 	background-color: white;
 	color: black;
 }
-=======
->>>>>>> c0250ce310d43ea869c8efa92267dbf18dd782ad
+
+.articleCarrousel h3{
+	border-left: white;
+}
+
+
+
+/****************/
+/* footer */
+/****************/
+
+footer{
+	background-color: black;
+	color: white;
+	margin-left: -1em;
+	margin-right: -0.5em;
+}
+
+footer ul{
+	list-style: none;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	left: 1em;
+	margin:0;
+	padding: 0;
+}
+
+footer ul h2{
+	display: flex;
+	justify-content: center;
+	margin-right: 50px;
+	font-size: 100px;
+	text-transform: uppercase;
+	margin:0.5em;
+	margin-left:-2.2em;
+
+}
+
+/* THE SOCIAL LINKS IN THE FOOTER */
+.socialLinks img{
+	width: 30px;
+	display: flex;
+	
+}
+.socialLinks{
+	display: flex;
+	justify-content: space-around;
+	margin: 50px;
+	margin-top: 0px;
+}
+
+footer p{
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+
+footer ul img{
+	width:13.5em;
+	margin: 0;
+	margin-left:-2em;
+	margin-top: 0em;
+	height: 9em;
+	opacity: 0.5;
+
+}
+
+footer ul p{
+	position: absolute;
+	margin-top: -6em;
+	margin-left: 4.5em;
+	width: 2em;
+	display: flex;
+	justify-content: center;
+	font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

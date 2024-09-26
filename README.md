@@ -216,6 +216,9 @@ aantekeningen voor testen screenreader van dazed:
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik was erg bang voor het javascripten, maar het viel best mee. Ik moet even inkomen, maar daarna begreep ik het weer en ging het ook wel. Alleen had ik wel moeite met het carousel te maken en dat er bij elke button een andere achtergrondkleur kwam met ook andere artikel carousellen. 
+
+  Wat alleen nu nog niet gelukt is is de hamburgermenu en zoekbar. Het komt wel naar voorschijn, maar alleen maar vanaf een kant en niet op het hele scherm. 
 
 
   ### Agenda voor meeting
@@ -226,6 +229,11 @@ aantekeningen voor testen screenreader van dazed:
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+  vragen:
+  - Caroussel. Hoe zorg ik ervoor dat tijdens het scrollen bij de linkerkant hetzelfde bljft?
+  - Niet alle svgs willen werken wanneer je op de dark-mode button klikt. Ze veranderen dan niet van kleur, hoe zorg ik ervoor dat dit wel gebeurd?
+  - Het font doet het niet als ik hem online zet, maar wel als ik hem via visual code live zet. 
 
 
   ### Verslag van meeting

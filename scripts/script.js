@@ -55,3 +55,75 @@ function displayText2() {
 
 showMoreButton.addEventListener("click", displayText);
 showMoreButton2.addEventListener("click", displayText2);
+
+
+// Allemaal voor het vak waar de achtergrondkleuren en artikelen veranderen zodra en op een button wordt geklikt. 
+const newBackgroundButton1 = document.querySelector('.changingColumn button:nth-of-type(1)');
+const newBackgroundButton2 = document.querySelector('.changingColumn button:nth-of-type(2)');
+const newBackgroundButton3 = document.querySelector('.changingColumn button:nth-of-type(3)');
+const newBackgroundButton4 = document.querySelector('.changingColumn button:nth-of-type(4)');
+const newBackgroundButton5 = document.querySelector('.changingColumn button:nth-of-type(5)');
+const newBackgroundButton6 = document.querySelector('.changingColumn button:nth-of-type(6)');
+
+
+const newColumnBackground = document.querySelector('.changingColumn');
+
+const articleChange = document.querySelector('.articleCarrousel');
+const secondArticleChange = document.querySelector('.secondArticleCarrousel');
+const thirdArticleChange = document.querySelector('.thirdArticleCarrousel');
+const fourthArticleChange = document.querySelector('.fourthArticleCarrousel');
+const fifthArticleChange = document.querySelector('.fifthArticleCarrousel');
+const sixthArticleChange = document.querySelector('.sixthArticleCarrousel');
+
+
+
+showMoreButton.addEventListener("click", displayText);
+ 
+function hideAllCarrousels() {
+    articleChange.style.display = 'none';
+    secondArticleChange.style.display = 'none';
+    thirdArticleChange.style.display = 'none';
+    fourthArticleChange.style.display = 'none';
+    fifthArticleChange.style.display = 'none';
+    sixthArticleChange.style.display = 'none';
+}
+
+
+
+newBackgroundButton1.addEventListener('click', function() {
+    newColumnBackground.style.backgroundColor = '#9864dc';
+    hideAllCarrousels();
+    articleChange.style.display = 'block';
+});
+
+newBackgroundButton2.addEventListener('click', function() {
+    newColumnBackground.style.backgroundColor = '#98fc94';
+    hideAllCarrousels();
+    secondArticleChange.style.display = 'block'; 
+});
+
+newBackgroundButton3.addEventListener('click', function() {
+    newColumnBackground.style.backgroundColor = '#ffe45c';
+    hideAllCarrousels();
+    thirdArticleChange.style.display = 'block'; 
+
+});
+
+newBackgroundButton4.addEventListener('click', function() {
+    newColumnBackground.style.backgroundColor = '#f03424';
+    hideAllCarrousels();
+    fourthArticleChange.style.display = 'block'; 
+});
+
+newBackgroundButton5.addEventListener('click', function() {
+    newColumnBackground.style.backgroundColor = '#487cfc';
+    hideAllCarrousels();
+    fifthArticleChange.style.display = 'block'; 
+});
+
+newBackgroundButton6.addEventListener('click', function() {
+    newColumnBackground.style.backgroundColor = '#f0644c';
+    hideAllCarrousels();
+    sixthArticleChange.style.display = 'block'; 
+});
+
