@@ -196,13 +196,13 @@ aantekeningen voor testen screenreader van dazed:
 
 
   ### WCAG Checklist
-   <img src="readme-images/IMG_0786.HEIC" width="375px" alt="WCAG Checklist">
-   <img src="readme-images/IMG_0787.HEIC" width="375px" alt="WCAG Checklist">
-   <img src="readme-images/IMG_0788.HEIC" width="375px" alt="WCAG Checklist">
-   <img src="readme-images/IMG_0789.HEIC" width="375px" alt="WCAG Checklist">
-   <img src="readme-images/IMG_0790.HEIC" width="375px" alt="WCAG Checklist">
-   <img src="readme-images/IMG_0791.HEIC" width="375px" alt="WCAG Checklist">
-   <img src="readme-images/IMG_0792.HEIC" width="375px" alt="WCAG Checklist">
+   <img src="readme-images/IMG_0786.png" width="375px" alt="WCAG Checklist">
+   <img src="readme-images/IMG_0787.png" width="375px" alt="WCAG Checklist">
+   <img src="readme-images/IMG_0788.png" width="375px" alt="WCAG Checklist">
+   <img src="readme-images/IMG_0789.png" width="375px" alt="WCAG Checklist">
+   <img src="readme-images/IMG_0790.png" width="375px" alt="WCAG Checklist">
+   <img src="readme-images/IMG_0791.png" width="375px" alt="WCAG Checklist">
+   <img src="readme-images/IMG_0792.png" width="375px" alt="WCAG Checklist">
 
 
 
