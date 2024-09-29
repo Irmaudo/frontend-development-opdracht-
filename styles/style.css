@@ -58,13 +58,14 @@ header{
 	margin-left: 1em;
 }
 
-nav ul{
-	display: flex;
-	list-style: none;
-	padding: 0;
-	align-items: center;
-	justify-content: space-between;
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    list-style: none;
+    padding: 0;
+    align-items: center;
 }
+
 
 h1{
 	font-family: 'stretchPro';
@@ -83,12 +84,13 @@ header svg{
 
 h2:nth-of-type(1){
 	margin-bottom: 0.5em;
+	position: relative;
+	left: 0.3em;
 }
 
 
 h2{
-	font-size: 2em;
-	width: 8em;
+	width: 12em;
 	display: flex;
 	justify-content: flex-start;
 	margin: 0.5em;
@@ -96,9 +98,17 @@ h2{
 	
 }
 
+h2{
+	font-family: 'stretchPro';
+	font-size: 1.5em;
+
+}
+
 h3{
 	margin: 0.5em;
 	padding: 0.1em;
+	font-family: "nimbus" ;
+	font-size: var(--font-size-small);
 }
 
 p{
@@ -306,13 +316,15 @@ iframe{
 
 /* COLUMNS WITH THE ARTISTS */
 
-.column img{
-	width: 11em;
+/*.column img{
+	width: 50%;
 }
 
 .column{
-	width: 10em;
+	width: 100%;
 	margin: 0.2em;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .column li{
@@ -340,6 +352,58 @@ iframe{
 	flex-wrap: wrap;
 	margin-left: -1em;
 }
+*/
+
+
+
+/* Basis styling voor de grid layout */
+.dazed100AllColumns {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
+	gap: 1.5em; /* Ruimte tussen kolommen */
+	margin: 2em 1em; /* Rand om het grid */
+  }
+  
+  /* Kolom styling */
+  .column {
+	transform: translateY(20px); /* Beetje naar beneden voor het fade-in effect */
+	transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animatie voor fade-in */
+	width: 100%;;
+  }
+  
+  .column.visible {
+	opacity: 1; /* Volledig zichtbaar als het in beeld is */
+	transform: translateY(0); /* Terug naar originele positie */
+  }
+  
+  .column img {
+	width: 100%; /* Afbeelding past in de kolom */
+	display: block;
+	margin-bottom: 1em; /* Ruimte onder de afbeelding */
+  }
+  
+  .column ul {
+	list-style: none; /* Verwijder standaard opsommingstekens */
+	padding: 0;
+	margin: 0;
+	margin-bottom: 1em; /* Ruimte onder de lijst */
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .column li {
+	font-size: 0.5em;
+	border-radius: 1em;
+	background-color: #f0f0f0;
+	padding: 0.5em 1em;
+	margin: 0.3em 0;
+	display: flex;
+	align-items: center;
+	margin: 0.2em;
+	width: 8em;
+  }
+  
+
 
 
 /* DAZED 100 TEXT */
@@ -643,7 +707,7 @@ button:hover{
 
 
 /* DARK-MODE */
-.darkModeToggle:hover{
+.dark-mode-toggle:hover{
 	animation: dark-mode-animation 0.5s ease-out ;
 }
 
@@ -652,7 +716,7 @@ button:hover{
 	color: white;
   }
 
-.darkModeToggle{
+.dark-mode-toggle{
 	background-color: rgb(21, 255, 0);
 	border-radius: 2em;
 	margin-left: 20em;
@@ -755,7 +819,7 @@ footer{
 	margin-right: -0.5em;
 }
 
-footer ul{
+/*footer ul{
 	list-style: none;
 	position: relative;
 	display: flex;
@@ -763,21 +827,31 @@ footer ul{
 	left: 1em;
 	margin:0;
 	padding: 0;
+}*/
+
+footer ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Of meer, afhankelijk van het ontwerp */
+    list-style: none;
+    padding: 0;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	left: 1em;
 }
+
 
 footer ul h2{
 	display: flex;
 	justify-content: center;
-	margin-right: 50px;
-	font-size: 100px;
+	font-size: 4.5em;
 	text-transform: uppercase;
-	margin:0.5em;
-	margin-left:-2.2em;
+	margin-left: -3.8em;
 }
 
 /* THE SOCIAL LINKS IN THE FOOTER */
 .socialLinks img{
-	width: 30px;
+	width: 1.5em;
 	display: flex;
 	
 }
@@ -797,11 +871,10 @@ footer p{
 }
 
 footer ul img{
-	width:13.5em;
-	margin: 0;
-	margin-left:-2em;
+	width:12em;
+	margin-left:-0.5em;
 	margin-top: 0em;
-	height: 9em;
+	height: 10em;
 	opacity: 0.60;
 
 }
@@ -809,11 +882,13 @@ footer ul img{
 footer ul p{
 	position: absolute;
 	margin-top: -6em;
-	margin-left: 4.5em;
-	width: 2em;
+	margin-left: 2.5em;
+	width: 6em;
 	display: flex;
 	justify-content: center;
 	font-size: 1em;
+	font-family: 'PLZ';
+	align-items: center;
 }
 
 
@@ -836,9 +911,33 @@ footer ul p{
 
 
 
+.textCorner p{
+	font-family: 'stretchPro';
+	font-size: 0.7em;
+	width: 40%;
+	text-transform: uppercase;
+	
+}
 
+.scrolling p{
+	font-family: 'stretchPro';
+	font-size: 0.7em;
+	width: 60%;
+	text-transform: uppercase;
+	position: relative;
+	right: 0.5em;
+}
 
+.features h3{
+	text-transform: uppercase;
+	font-size: 1em;
+}
 
+.features h4{
+	text-transform: uppercase;
+	font-size: 0.8em;
+	font-family: 'PLZ';
+}
 
 
 

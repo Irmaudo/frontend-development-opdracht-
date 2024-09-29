@@ -1,7 +1,7 @@
 // JavaScript Document
 console.log("hi");
 
-const hamburgerMenu = document.querySelector('.menuIcon');
+const hamburgerMenu = document.querySelector('nav li:nth-of-type(1)');
 
 const offScreenMenu = document.querySelector('.off-screen-menu');
 
@@ -11,7 +11,7 @@ hamburgerMenu.addEventListener('click', ()  => {
 })
 
 document.addEventListener("DOMContentLoaded", function() {
-    const toggleButton = document.querySelector(".darkModeToggle");
+    const toggleButton = document.querySelector("main button:nth-of-type(1)");
     const bodyElement = document.body;
 
     toggleButton.addEventListener("click", function() {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-const searchMenu = document.querySelector('.searchIcon');
+const searchMenu = document.querySelector('nav li:nth-of-type(2)');
 const offScreenSearch = document.querySelector('.off-screen-search');
 
 searchMenu.addEventListener('click', ()  => {
@@ -162,6 +162,7 @@ submitButton.addEventListener("click", function() {
         alert("Please enter a valid email address.");
     }
 });
+
 
 
 

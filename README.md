@@ -195,7 +195,14 @@ aantekeningen voor testen screenreader van dazed:
   - Alle images hebben een alt-tekst en worden ook door de screenreader benoemd.
 
 
-
+  ### WCAG Checklist
+   <img src="readme-images/IMG_0786.HEIC" width="375px" alt="WCAG Checklist">
+   <img src="readme-images/IMG_0787.HEIC" width="375px" alt="WCAG Checklist">
+   <img src="readme-images/IMG_0788.HEIC" width="375px" alt="WCAG Checklist">
+   <img src="readme-images/IMG_0789.HEIC" width="375px" alt="WCAG Checklist">
+   <img src="readme-images/IMG_0790.HEIC" width="375px" alt="WCAG Checklist">
+   <img src="readme-images/IMG_0791.HEIC" width="375px" alt="WCAG Checklist">
+   <img src="readme-images/IMG_0792.HEIC" width="375px" alt="WCAG Checklist">
 
 
 
