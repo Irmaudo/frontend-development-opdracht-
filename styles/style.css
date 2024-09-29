@@ -5,6 +5,11 @@
   box-sizing:border-box;  
 }
 
+/* columns veranderen qua groten/width */
+/*img {
+	max-width: 100%;
+}*/
+
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -184,10 +189,14 @@ li img{
 	border-radius: 30px;
 	color: white;
 	background-color: black;
-	width:34%;
-	padding: 7px;
+	width:15em;
+	height: 3em;
 	box-shadow: none;
 	text-transform: uppercase;
+	position: relative;
+	top: 0.1em;
+	margin: 0.5em;
+
 }
 
 .mail {
@@ -195,13 +204,11 @@ li img{
 	justify-content: center;
 }
 
-.mail p{
-	border: solid;
-	width: 14em;
+.mail input{
 	height: 2em;
-	font-size: 0.8em;
+	display: flex;
+	margin: 1em;
 }
-
 /* SHOWMORE BUTTONS */
 
 .showMore, .showMore2{
@@ -248,9 +255,9 @@ li img{
 }
 
 .columns{
-	margin: 35px;
+	margin: 1em;
 	background-color: white;
-	
+	margin-left: 2em;
 }
 
 .columns h3, p{
@@ -426,10 +433,6 @@ button:hover{
 }
 
 
-
-
-
-
 /* THE CORNER OF THE ARTICLES WITH THE GENRE "MUSIC" FOR EXAMPLE */
 .textCorner{
 	display: grid;
@@ -478,7 +481,6 @@ button:hover{
 	position: relative;
 	top: 0.5em;
 }
-
 
 .changingColumn ul{
 	position: relative;
@@ -656,8 +658,6 @@ button:hover{
 	margin-left: 20em;
 }
 
-
-
 /* HAMBURGER MENU WHEN ITS NOT CLICKED (NOT VISIBLE) */
 .off-screen-menu{
 	background-color: black;
@@ -712,7 +712,7 @@ button:hover{
 .articleCarrousel {
 	margin: 0 ; 
 	padding: 0;
-	list-style: none;
+	/*heb ik dit ndoig? list-style: none;*/
 	display: flex;
 	 /* handmatig scrollen is mogelijk */
 	overflow-x: scroll;
@@ -721,16 +721,14 @@ button:hover{
 	scroll-snap-type: inline mandatory;
 	/* smooth als met js gescrolled wordt */
 	scroll-behavior: smooth;
-  /* scrollbar zoveel mogelijk verbergen */
+  	/* scrollbar zoveel mogelijk verbergen */
   -webkit-overflow-scrolling: touch; /* voor iOS*/
   -ms-overflow-style: none; /* voor IE */
 	scrollbar-width: none; /* voor firefox */
-	
 	/* indien het einde of het begin van de pagina bereikt is met scrollen */
 	/* voorkomen dat de pagina gaat scrollen */
 	overscroll-behavior: contain auto;
-	width: 20em;
-	  
+	width: 20em;  
 }
 
 .articleCarrousel p{
@@ -742,7 +740,9 @@ button:hover{
 	border-left: white;
 }
 
-
+.articleCarrousel {
+	width: 21em;
+}
 
 /****************/
 /* footer */
@@ -773,7 +773,6 @@ footer ul h2{
 	text-transform: uppercase;
 	margin:0.5em;
 	margin-left:-2.2em;
-
 }
 
 /* THE SOCIAL LINKS IN THE FOOTER */
@@ -797,14 +796,13 @@ footer p{
 	font-size: 13px;
 }
 
-
 footer ul img{
 	width:13.5em;
 	margin: 0;
 	margin-left:-2em;
 	margin-top: 0em;
 	height: 9em;
-	opacity: 0.5;
+	opacity: 0.60;
 
 }
 
@@ -819,12 +817,22 @@ footer ul p{
 }
 
 
+.emailSubmitPop-up{
+	width: 22em;
+	height: 6em;
+	background-color: rgb(0, 255, 51);
+	position: relative;
+	top: -2em;
+	border-radius: 2em;
+}
 
-
-
-
-
-
+.emailSubmitPop-up h3{
+	display: flex;
+	justify-content: center;
+	font-size: var(--font-size-large);
+	position: relative;
+	bottom: -0.5em;
+}
 
 
 

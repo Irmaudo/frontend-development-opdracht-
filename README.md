@@ -239,10 +239,11 @@ aantekeningen voor testen screenreader van dazed:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - img max-width: 100%, hiervoor zorg je ervoor dat alle images in de kolommen blijven zitten.
+  - dark-mode svgs de fill-color weghalen in html en in css de kleur erin zetten. (fill: currentColor, want dan blijft de kleur zoals de kleur op dat moment op de body zit.)
+  - Font werkte niet, doordat de naam niet goed is aangesproken, waardoor hij niet live werkt.
+  - Idee voor nog 1 surface-plane is bij de enter mail adres een valid en invalid is. Dus je krijgt dan melding wanneer bv fout is egschreven en popup wanneer op submit wordt geklikt. 
+  - Nog een idee voor de surface-plane is scrollbar bij 2e pagina met de fade animatie.  
 
 </details>
 
@@ -285,7 +286,7 @@ aantekeningen voor testen screenreader van dazed:
   Nb. Vermeld de bronnen ook in je code.
 
   1. afbeeldingen en tekst: https://www.dazeddigital.com
-  2. bron 2
-  3. ...
+  2. confetti bij submit button: https://confetti.js.org/#
+  3. confetti hoe in code zetten (heb dit alleen als basis gebruikt): https://www.youtube.com/watch?v=5YTK7Mor-wM
 
 </details>

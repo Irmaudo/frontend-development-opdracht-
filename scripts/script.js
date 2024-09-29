@@ -40,18 +40,16 @@ searchMenu.addEventListener('click', ()  => {
 const showMoreButton = document.querySelector(".showMore");
 const showMoreButton2 = document.querySelector(".showMore2");
 
+const text = document.querySelector(".textField");
+const text2 = document.querySelector(".newArticle");
+
 function displayText() {
-    const text = document.querySelector(".textField");
     text.style.display = "block"; 
 }
-
 
 function displayText2() {
-    const text = document.querySelector(".newArticle");
-    text.style.display = "block"; 
+    text2.style.display = "block"; 
 }
-
-
 
 showMoreButton.addEventListener("click", displayText);
 showMoreButton2.addEventListener("click", displayText2);
@@ -93,7 +91,7 @@ function hideAllCarrousels() {
 newBackgroundButton1.addEventListener('click', function() {
     newColumnBackground.style.backgroundColor = '#9864dc';
     hideAllCarrousels();
-    articleChange.style.display = 'block';
+    articleChange.style.display = 'block'; 
 });
 
 newBackgroundButton2.addEventListener('click', function() {
@@ -106,7 +104,6 @@ newBackgroundButton3.addEventListener('click', function() {
     newColumnBackground.style.backgroundColor = '#ffe45c';
     hideAllCarrousels();
     thirdArticleChange.style.display = 'block'; 
-
 });
 
 newBackgroundButton4.addEventListener('click', function() {
@@ -126,4 +123,45 @@ newBackgroundButton6.addEventListener('click', function() {
     hideAllCarrousels();
     sixthArticleChange.style.display = 'block'; 
 });
+
+
+// mail button confetti
+
+const submitButton = document.querySelector(".mail button");
+const popUpText = document.querySelector(".emailSubmitPop-up");
+const emailInput = document.getElementById("email");
+
+function isValidEmail(email) {
+    const emailSymbols = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailSymbols.test(email);
+}
+
+
+function startConfetti() {
+    confetti();
+}
+
+function displayPopUp() {
+    popUpText.style.display = "block";
+
+    setTimeout(() => {
+        popUpText.style.display = "none"; 
+    }, 2000); 
+}
+
+submitButton.addEventListener("click", function() {
+    const email = emailInput.value; 
+
+ 
+    if (isValidEmail(email)) {
+      
+        startConfetti();
+        displayPopUp();
+    } else {
+    
+        alert("Please enter a valid email address.");
+    }
+});
+
+
 
