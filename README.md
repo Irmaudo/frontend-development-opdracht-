@@ -108,7 +108,7 @@ aantekeningen voor testen screenreader van dazed:
   
   Het html opzetten ging vrij goed. Toen ik eenmaal begon had ik al best snel mijn html af, omdat het vooral kopiëren en plakken is van afbeeldingen en tekst van de site. Ook ging de basis van mijn css goed. Alleen waar ik even weer moest nadenken hoe het moest, was bij flexbox. Bv mijn navigatiebar, daarvan was ik vergeten hoe dat moest maar uiteindelijk is het wel gelukt. 
   
-  Wat alleen nog niet gelukt is is mijn column met buttons. Deze komen nog niet mooi onder/naast elkaar te staan. 
+  Wat alleen nog niet gelukt is is de column met buttons. Deze komen nog niet mooi onder/naast elkaar te staan. 
 
   ### Agenda voor meeting
   vragen:
@@ -156,7 +156,7 @@ aantekeningen voor testen screenreader van dazed:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - font via de opdracht die is gegeven  proberen in css te zetten. Als dit echt niet lukt, dan om hulp vragen. (te vinden in week 1, werkgroep 1 over typografie).
+  - font via de opdracht die is gegeven proberen in css te zetten. Als dit echt niet lukt, dan om hulp vragen. (te vinden in week 1, werkgroep 1 over typografie).
   - De benamingen van de classes anders benoemen (engels of nederlands & ook duidelijkere namen geven, want is nu soms nog onduidelijk).
   - Classes zo min mogelijk gebruiken, doormiddel van nth-of-type, nth-of-child etc.
   - Scrollbar kan zijn dat het niet werkt, omdat het op de hele pagina geconnect staat en niet op het element.
@@ -251,13 +251,16 @@ aantekeningen voor testen screenreader van dazed:
   ### Dit ging goed/Heb ik geleerd: 
 
   <img src="readme-images/darkmodus.png" width="375px" alt="top">
-  De dark-modus was best makkelijk om toe te passen in mijn site, alleen wouden er soms kleinen dingen dan net niet werken, zoals de svgs die niet van kleur veranderde of dat de nav bar opeens niet van achtergrondkleur veranderde. Uiteindelijk na veel proberen toch gelukt, doormiddel van specifiek de nav nog de kleur aan te geven in css.
+
+  - De dark-modus was best makkelijk om toe te passen in mijn site, alleen wouden er soms kleinen dingen dan net niet werken, zoals de svgs die niet van kleur veranderde of dat de nav bar opeens niet van achtergrondkleur veranderde. Uiteindelijk na veel proberen toch gelukt, doormiddel van specifiek de nav nog de kleur aan te geven in css.
 
   <img src="readme-images/popupTextandConfetti.png" width="375px" alt="top">
-  Met behulp van wat filmpjes en sites was dit best wel eenvoudig om te maken. Alleen duurde het wel even, omdat het vaak niet wou werken door de kleine foutjes die ik had gemaakt in mijn code. Ook de show more buttons die je erboven ziet ging goed, alleen toen ik de 2e button ook een artikel wou toevoegen had ik wat proberen, omdat ik beide hetzelfde aanroepte, waardoor als je een button had geklikt, de andere niet meer kon. 
+
+  -  Met behulp van wat filmpjes en sites was dit best wel eenvoudig om te maken. Alleen duurde het wel even, omdat het vaak niet wou werken door de kleine foutjes die ik had gemaakt in mijn code. Ook de show more buttons die je erboven ziet ging goed, alleen toen ik de 2e button ook een artikel wou toevoegen had ik wat proberen, omdat ik beide hetzelfde aanroepte, waardoor als je een button had geklikt, de andere niet meer kon. 
   
   <img src="readme-images/buttonsWithNewArticleCaroussels.png" width="375px" alt="top">
-  Als laatste heb ik ook veel geleerd van deze. Hier komen eigelijk 3 verschillende dingen samen: achtergrondkleuren die veranderen na elke button die je klikt, de artikelen die dan ook veranderen en de artikel carrousel. Hierbij heb ik vooral geleerd, dat je goed moet kijken wat je met welke kan koppelen voor js. bv: newBackgroundButton1.addEventListener('click', function() {
+
+  - Als laatste heb ik ook veel geleerd van deze. Hier komen eigelijk 3 verschillende dingen samen: achtergrondkleuren die veranderen na elke button die je klikt, de artikelen die dan ook veranderen en de artikel carrousel. Hierbij heb ik vooral geleerd, dat je goed moet kijken wat je met welke kan koppelen voor js. bv: newBackgroundButton1.addEventListener('click', function() {
     newColumnBackground.style.backgroundColor = '#9864dc';
     hideAllCarrousels();
     articleChange.style.display = 'block'; 
@@ -266,12 +269,12 @@ aantekeningen voor testen screenreader van dazed:
 
   ### Dit was lastig/Is niet gelukt:
   <img src="readme-images/hamburgermenu.png" width="375px" alt="top">
-  Ik ben erg trots op dat dit toch nog is gelukt, omdat het steeds maar niet wou werken en daardoor ook veel tijd koste. 
+  - Ik ben erg trots op dat dit toch nog is gelukt, omdat het steeds maar niet wou werken en daardoor ook veel tijd koste. 
 
   <img src="readme-images/artistsArticles.png" width="375px" alt="bummer">
-  Helaas is het niet gelukt om zoals op de site een fade-in te maken wanneer je door de artiest articles scrolled. Ik heb heel veel verschillende dingen geprobeerd, maar het wou gewoon niet werken. 
+  - Helaas is het niet gelukt om zoals op de site een fade-in te maken wanneer je door de artiest articles scrolled. Ik heb heel veel verschillende dingen geprobeerd, maar het wou gewoon niet werken. 
 
-  Wat ik nog meer erg lastig vond was om het font online te krijgen, want als ik de site live zette op visual code werkte het font, maar zodra ik hem online zet gebeurde er steeds niks. Ik heb daardoor veel verschillende dingen geprobeerd, zoals (/font/...) (font/...) (...), maar het werkte allemaal niet. Maar het is uiteindelijk wel gelukt, doordat ik het mapje font in het mapje styles heb gezet (ik weet niet alleen niet de reden waarom het nu wel werkt.)
+  - Wat ik nog meer erg lastig vond was om het font online te krijgen, want als ik de site live zette op visual code werkte het font, maar zodra ik hem online zet gebeurde er steeds niks. Ik heb daardoor veel verschillende dingen geprobeerd, zoals (/font/...) (font/...) (...), maar het werkte allemaal niet. Maar het is uiteindelijk wel gelukt, doordat ik het mapje font in het mapje styles heb gezet (ik weet niet alleen niet de reden waarom het nu wel werkt.)
 </details>
 
 
