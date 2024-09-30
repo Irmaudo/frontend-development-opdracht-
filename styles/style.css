@@ -38,8 +38,8 @@
 }
 
 @font-face {
-	font-family: 'akira';
-	src: url('/font/Akira Expanded Demo.woff2') format('woff2');
+	font-family: 'Akira Expanded Demo';
+	src: url('/font/Akira Expanded Demo.ttf');
 }
 
 
@@ -77,7 +77,7 @@ nav ul {
 
 h1{
 	/*font-family: 'stretchPro';*/
-	font-family: 'akira';
+	font-family: 'Akira Expanded Demo';
 	font-size: var(--font-size-large);
 	margin: 1em;
 }
