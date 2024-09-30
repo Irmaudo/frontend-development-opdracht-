@@ -51,8 +51,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/homepageScreenshot.png" width="375px" alt="homepagina van de site dazed">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  artikel
-  <img src="readme-images/articleWillow.png" width="375px" alt="artikel van artiest Willow van de site dazed">
+  dazed 100
+  <img src="readme-images/dazed100Page.png" width="375px" alt="artikel van dazed 100 pagina van de site dazed">
+  <img src="readme-images/dazed100Page2.png" width="375px" alt="artikel van dazed 100 pagina van de site dazed">
  
 </details>
 
@@ -244,14 +245,23 @@ aantekeningen voor testen screenreader van dazed:
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/hamburgermenu.png" width="375px" alt="top">
+  Ik ben erg trots op dat dit is gelukt, omdat het steeds maar niet wou werken en daardoor ook veel tijd koste. Uiteindelijk is het wel gelukt. 
 
+  <img src="readme-images/darkmodus.png" width="375px" alt="top">
+  De dark-modus was best makkelijk om toe te passen in mijn site, alleen wouden er soms kleinen dingen dan net niet werken, zoals de svgs die niet van kleur veranderde of dat de nav bar opeens niet van achtergrondkleur veranderde. Uiteindelijk na veel proberen toch gelukt.
+
+  <img src="readme-images/popupTextandConfetti.png" width="375px" alt="top">
+  Met behulp van wat filmpjes en sites was dit best wel eenvoudig om te maken. Alleen duurde het wel even, omdat het vaak niet wou werken door de kleine foutjes die ik had gemaakt in mijn code. 
+  
+  <img src="readme-images/showMoreButton.png" width="375px" alt="top">
+
+  <img src="readme-images/buttonsWithNewArticleCaroussels.png" width="375px" alt="top">
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes

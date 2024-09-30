@@ -23,19 +23,19 @@
 
 @font-face {
 	font-family: "PLZ";
-	src: url("/Frontend-Development/basiswebsite/font/PLZ.woff2");
+	src: url("/font/PLZ.woff2");
 }
 
 @font-face {
 	font-family: 'nimbus';
-	src: url('/Frontend-Development/basiswebsite/font/NimbusSanL-Reg.woff2') format('woff2');
+	src: url('/font/NimbusSanL-Reg.woff2') format('woff2');
 	font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
 	font-family: 'stretchPro';
-	src: url('/Frontend-Development/basiswebsite/font/StretchPro.woff2') format('woff2');
+	src: url('/font/StretchPro.woff2') format('woff2');
 }
 
 
@@ -296,7 +296,7 @@ li img{
 	margin: 1em;
 	background-color: white;
 	margin-left: 2em;
-	height: 45em;
+	height: 47em;
 }
 
 .columns h3{
@@ -344,11 +344,6 @@ li img{
 .articleCarrousel h3{
 	border-left: white;
 }
-
-.articleCarrousel {
-	width: 20em;
-}
-
 
 /* FOR 2TH PAGE */
 
@@ -403,7 +398,7 @@ iframe{
   }
   
   .column img {
-	width: 100%; /* Afbeelding past in de kolom */
+	width: 100%; 
 	display: block;
 	margin-bottom: 1em;
   }
@@ -465,13 +460,9 @@ iframe{
 }
 
 .dazed100AllColumns {
-	opacity:0;
 	transition: opacity 2s ease-in;
 }
 
-.column.visible{
-	opacity:1;
-}
 
 /* DAZED 100 TEXT */
 .dazed100Title h2 {
@@ -487,8 +478,8 @@ iframe{
 	text-align: center;
 	font-size: 1.3em;
 	margin: 0.8em;
-
 }
+
 
 /* BUTTONS FOR THE 2TH PAGE */
 .buttonPage100 button{
@@ -780,7 +771,6 @@ button:hover{
     color: white; 
 }
 
-
 /* HAMBURGER MENU WHEN ITS NOT CLICKED (NOT VISIBLE) */
 /* Off-screen menu: standaard buiten beeld (boven het scherm) */
 .off-screen-menu {
@@ -798,16 +788,16 @@ button:hover{
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    transition: top 0.5s ease; 
+    transition: top 0.5s ease; /* hierdoor komt het menu vanaf bover naar beneden */
 	text-transform: uppercase;
 	font-family: 'stretchPro';
-	z-index: 1000;
-	overflow: hidden;
+	z-index: 1000; 
+	overflow: hidden; /* hierdoor blijft het menu boven alles te staan */
 }
 
 /* Menu komt naar beneden */
 .off-screen-menu.active {
-    top: 0; 
+    top: 0; /* spreek je aan dat hij vanaf top 0 begint en dan naar de menuy transition gaat*/
 }
 
 .off-screen-menu li{

@@ -8,7 +8,7 @@ const hamburgerMenu = document.querySelector('nav li:nth-of-type(1)');
 const offScreenMenu = document.querySelector('.off-screen-menu');
 
 hamburgerMenu.addEventListener('click', ()  => {
-    hamburgerMenu.classList.toggle('active');
+    hamburgerMenu.classList.toggle('active'); //active wordt aangeroepen, deze staat in css //
     offScreenMenu.classList.toggle('active');
 })
 
@@ -157,7 +157,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-window.onload = function(){
-    var article = document.querySelector('.dazed100AllColumns');
-    article.classlist.add('visible');
-}
+  
+
+
+
+
+
+
