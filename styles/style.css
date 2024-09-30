@@ -16,7 +16,6 @@
 	--font-size-small: 1em;
 }
 
-
 /****************/
 /* FONTS */
 /****************/
@@ -151,7 +150,7 @@ svg{
     height: 1.5em;
 }
 
-/* ALL THE HORIZONTAL LINES */
+/* alle horizontale lijnen */
 hr{
 	display: flex;
 	justify-content: center;
@@ -163,7 +162,7 @@ header hr{
 	top: -1em;
 }
 
-/* ALL BUTTONS */
+/* alle buttons */
 button{
 	position: relative;
 	bottom: 0.5em;
@@ -183,7 +182,7 @@ li img{
 
 }
 
-/* DAZED CLUB*/
+/* dazed club */
 
 .dazedClub img {
 	width: 4em;
@@ -201,7 +200,7 @@ li img{
 	justify-content: center;
 }
 
-/* MAIL REGISTER  */
+/* mail registratie  */
 
 .mail button{
 	border-radius: 2em;
@@ -214,7 +213,6 @@ li img{
 	position: relative;
 	top: 0.1em;
 	margin: 0.5em;
-
 }
 
 .mail {
@@ -247,7 +245,7 @@ li img{
 	bottom: -0.5em;
 }
 
-/* SHOWMORE BUTTONS */
+/* showmore buttons */
 
 .showMore, .showMore2{
 	display: block;
@@ -265,7 +263,7 @@ li img{
 	margin-bottom: 2em;
 }
 
-/* COLUMNS WITH ALL SORTS OF ARTICLE SCROLLS/CLICKS */ 
+/* kolommen met allemaal soorten artikel scrolls/clicks */ 
 
 .changingColumn{
 	background-color: #9260DEff;
@@ -316,13 +314,11 @@ li img{
 
 .columns hr{
 	width: 5em;
-
 }
 
-/* CAROUSEL */
+/* carrousel */
 
-/* dit heb ik van caroussel link van teams*/
-.articleCarrousel {
+.articleCarrousel { /* dit heb ik met een caroussel codepen bron: https://codepen.io/shooft/pen/abmLRMg*/
 	margin: 0 ; 
 	padding: 0;
 	display: flex;
@@ -345,9 +341,9 @@ li img{
 	border-left: white;
 }
 
-/* FOR 2TH PAGE */
+/* voor 2e pagina */
 
-/* VIDEOS */
+/* videos */
 video{
 	width: 23.5em;
 	margin-left: -0.5em;
@@ -359,7 +355,7 @@ iframe{
 	margin-left: -0.5em;
 }
 
-/* BUTTON */
+/* buttons */
 
 .button100{
 	width: 10em;
@@ -375,7 +371,7 @@ iframe{
 	justify-content: center;
 }
 
-/* COLUMNS WITH THE ARTISTS */
+/* kolommen met de artietsen */
 
 /* Basis styling voor de grid layout */
 .dazed100AllColumns {
@@ -386,24 +382,14 @@ iframe{
   }
   
   /* Kolom styling */
-  .column {
-	transform: translateY(20px); /* Beetje naar beneden voor het fade-in effect */
-	transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animatie voor fade-in */
-	width: 100%;
-  }
   
-  .column.visible {
-	opacity: 1; /* Volledig zichtbaar als het in beeld is */
-	transform: translateY(0); /* Terug naar originele positie */
-  }
-  
-  .column img {
+.column img {
 	width: 100%; 
 	display: block;
 	margin-bottom: 1em;
   }
   
-  .column ul {
+.column ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -439,8 +425,8 @@ iframe{
 	width: 70%;
 }
 
-/* COLUMNS (COLOR BUTTONS) 2TH PAGE */
-.column li:nth-of-type(1){
+/* kolommen (kleuren buttons) voor 2e pagina */
+.column li:nth-of-type(1){ /* elke button krijgt een eigen kleur */
 	background-color: rgb(247, 85, 225);
 }
 
@@ -527,7 +513,7 @@ button:hover{
 	margin-left: 2em;
 }
 
-/* THE CORNER OF THE ARTICLES WITH THE GENRE "MUSIC" FOR EXAMPLE */
+/* Het hoekje van de artikelen met het genre "music" als voorbeeld */
 .textCorner{
 	display: grid;
 	position: relative;
@@ -545,7 +531,7 @@ button:hover{
 	text-transform: uppercase;
 }
 
-/* SPECIAL ARTICLE WITH OTHER BACKGROUNDS */
+/* speciale artikelen met eigen achtegrond */
 /* BLUE ARTICLE */
 .articleBigDisplay{
 	background-color: rgb(128,156,252);
@@ -611,7 +597,7 @@ button:hover{
 	color: black;
 }
 
-/* LINES THAT ARE IN SPECIAL ARTICLE ^ */
+/* lijnen dat in dit speciale artikel zitten ^ */
 .lines{
 	margin: 1em;
 	border-left: solid;
@@ -626,7 +612,7 @@ button:hover{
 }
 
 
-/* SCROLLING THROUGH MAGAZINE AND FEATURES SECTION */
+/* scrollen door de magazine en features sectie */
 .scrolling img{
 	width: 15em;
 	margin: 0.5em;
@@ -664,8 +650,7 @@ button:hover{
 	overflow-x:auto; /* zorgt ervoor dat je horizontaal kan scrollen */
 }
 
-
-/* FEATURE SECTION */
+/* feature sectie*/
 
 .features{
 	text-align: center;
@@ -694,8 +679,7 @@ button:hover{
 }
 
 
-/* GREENSHADOW OF BEAUTY SECTION */
-/* NAAM VERANDEREN VAN DEZE CLASS !! */
+/* groene schaduw die bij de beauty sectie is */
 .green{
 	box-shadow: 0.0em -0.4em 0em rgb(1, 252, 1);
 	margin-top: 1em;
@@ -729,7 +713,7 @@ button:hover{
     }
 }
 
-/* BEAUTY LOGO FLOATING */
+/* beauty logo floating */
 .beautyLogo{
     transform: translateY(0em);
     animation: float 4s ease-in-out infinite;
@@ -742,8 +726,7 @@ button:hover{
 	left: 4em;
 }
 
-
-/* DARK-MODE */
+/* dark-mode */
 .dark-mode-toggle:hover{
 	animation: dark-mode-animation 0.5s ease-out ;
 }
@@ -771,9 +754,9 @@ button:hover{
     color: white; 
 }
 
-/* HAMBURGER MENU WHEN ITS NOT CLICKED (NOT VISIBLE) */
+/* hamburgermenu wanneer het nog niet geklikt is (niet zichtbaar) */
 /* Off-screen menu: standaard buiten beeld (boven het scherm) */
-.off-screen-menu {
+.off-screen-menu {  /* met behulp van youtube video over hamburgermenu gemaakt bron: https://www.youtube.com/watch?v=M498DvQDkJo&list=WL&index=2*/
     background-color: black;
     color: white;
     height: 27em;
@@ -886,7 +869,7 @@ footer ul img{
 	opacity: 0.60;
 }
 
-/* THE SOCIAL LINKS IN THE FOOTER */
+/* de social links in de footer */
 .socialLinks img{
 	width: 1.5em;
 	display: flex;

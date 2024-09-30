@@ -27,7 +27,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. dark-mode button
   3. wanneer op button wordt geklikt, komt er een andere achtergrond en een neiuwe carrousel met artikelen
   4. e-mail validator waarbij een popup komt wanneer goed is en wanneer fout is een foutmelding komt
-  5. een fade tijdens het scrollen van de artikelen op de 2e pagina
+  5. een fade tijdens het scrollen van de artikelen op de 2e pagina / deze is helaas niet gelukt /
   6. logo dat omhoog en omlaag gaat
   7. een video die de hele tijd afspeelt
  
@@ -245,28 +245,31 @@ aantekeningen voor testen screenreader van dazed:
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/myVersion.png" width="375px" alt="uitkomst opdracht">
 
 
   ### Dit ging goed/Heb ik geleerd: 
 
-  <img src="readme-images/hamburgermenu.png" width="375px" alt="top">
-  Ik ben erg trots op dat dit is gelukt, omdat het steeds maar niet wou werken en daardoor ook veel tijd koste. Uiteindelijk is het wel gelukt. 
-
   <img src="readme-images/darkmodus.png" width="375px" alt="top">
-  De dark-modus was best makkelijk om toe te passen in mijn site, alleen wouden er soms kleinen dingen dan net niet werken, zoals de svgs die niet van kleur veranderde of dat de nav bar opeens niet van achtergrondkleur veranderde. Uiteindelijk na veel proberen toch gelukt.
+  De dark-modus was best makkelijk om toe te passen in mijn site, alleen wouden er soms kleinen dingen dan net niet werken, zoals de svgs die niet van kleur veranderde of dat de nav bar opeens niet van achtergrondkleur veranderde. Uiteindelijk na veel proberen toch gelukt, doormiddel van specifiek de nav nog de kleur aan te geven in css.
 
   <img src="readme-images/popupTextandConfetti.png" width="375px" alt="top">
-  Met behulp van wat filmpjes en sites was dit best wel eenvoudig om te maken. Alleen duurde het wel even, omdat het vaak niet wou werken door de kleine foutjes die ik had gemaakt in mijn code. 
+  Met behulp van wat filmpjes en sites was dit best wel eenvoudig om te maken. Alleen duurde het wel even, omdat het vaak niet wou werken door de kleine foutjes die ik had gemaakt in mijn code. Ook de show more buttons die je erboven ziet ging goed, alleen toen ik de 2e button ook een artikel wou toevoegen had ik wat proberen, omdat ik beide hetzelfde aanroepte, waardoor als je een button had geklikt, de andere niet meer kon. 
   
-  <img src="readme-images/showMoreButton.png" width="375px" alt="top">
-
   <img src="readme-images/buttonsWithNewArticleCaroussels.png" width="375px" alt="top">
+  Als laatste heb ik ook veel geleerd van deze. Hier komen eigelijk 3 verschillende dingen samen: achtergrondkleuren die veranderen na elke button die je klikt, de artikelen die dan ook veranderen en de artikel carrousel. Hierbij heb ik vooral geleerd, dat je goed moet kijken wat je met welke kan koppelen voor js. bv: newBackgroundButton1.addEventListener('click', function() {
+    newColumnBackground.style.backgroundColor = '#9864dc';
+    hideAllCarrousels();
+    articleChange.style.display = 'block'; 
+  }); Ik had eerst alle carrousels per functie als 'hide' gezet, maar dat zou te veel code zijn en daardoor kan je ze samen koppelen door er een aparte functie van te maken, die je later weer kan koppelen in iets anders. 
+
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  <img src="readme-images/hamburgermenu.png" width="375px" alt="top">
+  Ik ben erg trots op dat dit toch nog is gelukt, omdat het steeds maar niet wou werken en daardoor ook veel tijd koste. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/artistsArticles.png" width="375px" alt="bummer">
+  Helaas is het niet gelukt om zoals op de site een fade-in te maken wanneer je door de artiest articles scrolled. Ik heb heel veel verschillende dingen geprobeerd, maar het wou gewoon niet werken. 
 </details>
 
 
@@ -284,9 +287,12 @@ aantekeningen voor testen screenreader van dazed:
 
   1. afbeeldingen en tekst: https://www.dazeddigital.com
   2. email validator : https://mailtrap.io/blog/javascript-email-validation/
-  3. ChatGPT voor mail validator: prompt: maak voorbeeld van een validator voor emailadres invoeren in code
+  3. ChatGPT voor mail validator: prompt: 'maak voorbeeld van een validator voor emailadres invoeren in code'
   3. confetti bij submit button: https://confetti.js.org/#
   4. confetti hoe in code zetten (heb dit alleen als basis gebruikt): https://www.youtube.com/watch?v=5YTK7Mor-wM
-  5. ChatGPT voor oplossing van het niet gebruiken van een onlick: prompt: how to change background when clicked on button code without onclick
+  5. ChatGPT voor oplossing van het niet gebruiken van een onlick: prompt: 'how to change background when clicked on button code without onclick'
   6. dark-mode button: https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+  7. carrousel uitleg voorbeeld in codepen: htps://codepen.io/shooft/pen/abmLRMg*/
+  8. youtube video over hamburgermenu: https://www.youtube.com/watch?v=M498DvQDkJo&list=WL&index=2*/
+  9. svg van search-icon kwam van dazed site zelf. 
 </details>
