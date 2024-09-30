@@ -22,19 +22,24 @@
 
 @font-face {
 	font-family: "PLZ";
-	src: url("font/PLZ.woff2");
+	src: url("/font/PLZ.woff2");
 }
 
 @font-face {
 	font-family: 'nimbus';
-	src: url('font/NimbusSanL-Reg.woff2') format('woff2');
+	src: url('/font/NimbusSanL-Reg.woff2') format('woff2');
 	font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
 	font-family: 'stretchPro';
-	src: url('StretchPro.woff2') format('woff2');
+	src: url('/font/StretchPro.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'akira';
+	src: url('/font/Akira Expanded Demo.woff2') format('woff2');
 }
 
 
@@ -71,7 +76,8 @@ nav ul {
 
 
 h1{
-	font-family: 'stretchPro';
+	/*font-family: 'stretchPro';*/
+	font-family: 'akira';
 	font-size: var(--font-size-large);
 	margin: 1em;
 }

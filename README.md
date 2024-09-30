@@ -295,4 +295,5 @@ aantekeningen voor testen screenreader van dazed:
   7. carrousel uitleg voorbeeld in codepen: htps://codepen.io/shooft/pen/abmLRMg*/
   8. youtube video over hamburgermenu: https://www.youtube.com/watch?v=M498DvQDkJo&list=WL&index=2*/
   9. svg van search-icon kwam van dazed site zelf. 
+  10. video in html Chatgpt gevraagd om voorbeeld van hoe ik dit kan doen: 'Maak een voorbeeld waarbij een video in html zit en leg uit wat er gebeurt' 
 </details>
