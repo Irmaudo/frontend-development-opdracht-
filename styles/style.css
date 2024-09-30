@@ -5,12 +5,6 @@
   box-sizing:border-box;  
 }
 
-/* columns veranderen qua groten/width */
-/*img {
-	max-width: 100%;
-}*/
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -54,16 +48,26 @@ header{
 	justify-content: center;
 	width: 20em;
 	margin: 3em;
+	position: relative;
+	right: 2em;
 	margin-bottom: -2em;
-	margin-left: 1em;
 }
 
+nav {
+    position: relative;
+    background-color: white; 
+	top: -4em;
+	z-index: 2000; /* zorgt ervoor dat als de menu is uigeklapt, de navbar nog steeds zichtbaar is*/
+}
+
+/* Style voor de navigatieknoppen */
 nav ul {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); 
+    grid-template-columns: repeat(5, 1fr);
     list-style: none;
     padding: 0;
     align-items: center;
+    background-color: white;
 }
 
 
@@ -82,6 +86,11 @@ header svg{
 /* MAIN */
 /****************/
 
+main{
+	position: relative;
+	bottom: 3em;
+}
+
 h2:nth-of-type(1){
 	margin-bottom: 0.5em;
 	position: relative;
@@ -95,13 +104,13 @@ h2{
 	justify-content: flex-start;
 	margin: 0.5em;
 	margin-bottom: -0.8em;
-	
-}
-
-h2{
 	font-family: 'stretchPro';
 	font-size: 1.5em;
+}
 
+h2:nth-of-type(2){
+	position: relative;
+	top: -0.8em;
 }
 
 h3{
@@ -111,16 +120,17 @@ h3{
 	font-size: var(--font-size-small);
 }
 
+article h3{
+	border-left: solid;
+	margin-left: 0.3em;
+	padding: 0.4em;
+}
+
 p{
 	font-family: "nimbus" ;
 	margin: 0.4em;
 	padding: 0.1em;
 	font-size: var(--font-size-small);
-}
-
-h2:nth-of-type(2){
-	position: relative;
-	top: -0.8em;
 }
 
 article p {
@@ -130,22 +140,15 @@ article p {
 	grid: 1fr 1fr 1fr;
 }
 
-
 main img {
 	width: 22em;
-	padding: 5px;
-}
-
-article h3{
-	border-left: solid;
-	margin-left: 0.3em;
-	padding: 0.4em;
+	padding: 0.3em;
 }
 
 svg{
 	margin: 1em;
 	width: 90%;
-    height: 20px;
+    height: 1.5em;
 }
 
 /* ALL THE HORIZONTAL LINES */
@@ -155,10 +158,15 @@ hr{
 	margin: 1em;
 }
 
+header hr{
+	position: relative;
+	top: -1em;
+}
+
+/* ALL BUTTONS */
 button{
 	position: relative;
 	bottom: 0.5em;
-	
 }
 
 
@@ -182,7 +190,7 @@ li img{
 }
 
 .dazedClub p{
-	font-size: 14px;
+	font-size: 0.8em;
 	text-align: center;
 }
 
@@ -196,7 +204,7 @@ li img{
 /* MAIL REGISTER  */
 
 .mail button{
-	border-radius: 30px;
+	border-radius: 2em;
 	color: white;
 	background-color: black;
 	width:15em;
@@ -219,6 +227,26 @@ li img{
 	display: flex;
 	margin: 1em;
 }
+
+
+/* email popup */
+.emailSubmitPop-up{
+	width: 22em;
+	height: 6em;
+	background-color: rgb(0, 255, 51);
+	position: relative;
+	top: -2em;
+	border-radius: 2em;
+}
+
+.emailSubmitPop-up h3{
+	display: flex;
+	justify-content: center;
+	font-size: var(--font-size-large);
+	position: relative;
+	bottom: -0.5em;
+}
+
 /* SHOWMORE BUTTONS */
 
 .showMore, .showMore2{
@@ -268,6 +296,12 @@ li img{
 	margin: 1em;
 	background-color: white;
 	margin-left: 2em;
+	height: 45em;
+}
+
+.columns h3{
+	font-family: 'PLZ';
+	font-size: 1.3em;
 }
 
 .columns h3, p{
@@ -285,6 +319,36 @@ li img{
 
 }
 
+/* CAROUSEL */
+
+/* dit heb ik van caroussel link van teams*/
+.articleCarrousel {
+	margin: 0 ; 
+	padding: 0;
+	display: flex;
+	overflow-x: scroll;  /* handmatig scrollen is mogelijk */
+	overflow-y: hidden;
+	scroll-behavior: smooth; /* smooth als met js gescrolled wordt */
+  	-webkit-overflow-scrolling: touch; /* voor iOS*/
+  	-ms-overflow-style: none; /* voor IE */
+	scrollbar-width: none; /* voor firefox */
+	overscroll-behavior: contain auto; /* voorkomen dat de pagina gaat scrollen */
+	width: 20em;  
+}
+
+.articleCarrousel p{
+	background-color: white;
+	color: black;
+}
+
+.articleCarrousel h3{
+	border-left: white;
+}
+
+.articleCarrousel {
+	width: 20em;
+}
+
 
 /* FOR 2TH PAGE */
 
@@ -292,6 +356,8 @@ li img{
 video{
 	width: 23.5em;
 	margin-left: -0.5em;
+	position: relative;
+	top: -1.1em;
 }
 
 iframe{
@@ -316,50 +382,10 @@ iframe{
 
 /* COLUMNS WITH THE ARTISTS */
 
-/*.column img{
-	width: 50%;
-}
-
-.column{
-	width: 100%;
-	margin: 0.2em;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.column li{
-	font-size: 0.7em;
-	border-radius: 2em;
-	border-color: black;
-	display: flex;
-	align-items: center;
-	margin: 0.2em;
-}
-
-.column ul{
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0;
-	margin-left: -2em;
-	height: 3em;
-	
-}
-
-.dazed100AllColumns{
-	display: flex;
-	justify-content: space-around;
-	margin: 0.1em;
-	flex-wrap: wrap;
-	margin-left: -1em;
-}
-*/
-
-
-
 /* Basis styling voor de grid layout */
 .dazed100AllColumns {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
+	grid-template-columns: repeat(2, 1fr); 
 	gap: 1.5em; /* Ruimte tussen kolommen */
 	margin: 2em 1em; /* Rand om het grid */
   }
@@ -368,7 +394,7 @@ iframe{
   .column {
 	transform: translateY(20px); /* Beetje naar beneden voor het fade-in effect */
 	transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animatie voor fade-in */
-	width: 100%;;
+	width: 100%;
   }
   
   .column.visible {
@@ -379,42 +405,81 @@ iframe{
   .column img {
 	width: 100%; /* Afbeelding past in de kolom */
 	display: block;
-	margin-bottom: 1em; /* Ruimte onder de afbeelding */
+	margin-bottom: 1em;
   }
   
   .column ul {
-	list-style: none; /* Verwijder standaard opsommingstekens */
+	list-style: none;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 1em; /* Ruimte onder de lijst */
+	margin-bottom: 1em; 
 	display: flex;
 	flex-wrap: wrap;
   }
   
-  .column li {
+.column li {
 	font-size: 0.5em;
 	border-radius: 1em;
-	background-color: #f0f0f0;
 	padding: 0.5em 1em;
 	margin: 0.3em 0;
 	display: flex;
 	align-items: center;
 	margin: 0.2em;
 	width: 8em;
-  }
-  
+	color: white;
+}
 
+.column h3{
+	border-bottom: 0.1em solid black;
+	width: 60%;
+	font-family: 'PLZ';
+	font-size: 1em;
+	position: relative;
+	right: 0.3em;
+}
 
+.column p{
+	position: relative;
+	right: 2em;
+	width: 70%;
+}
+
+/* COLUMNS (COLOR BUTTONS) 2TH PAGE */
+.column li:nth-of-type(1){
+	background-color: rgb(247, 85, 225);
+}
+
+.column li:nth-of-type(2){
+	background-color: rgb(68, 130, 254);
+}
+
+.column li:nth-of-type(3){
+	background-color: rgb(76, 188, 59);
+}
+
+.column li:nth-of-type(4){
+	background-color: rgb(255, 255, 255);
+	color: black;
+	border: 0.1em solid black;
+	width: 30%;
+}
+
+.dazed100AllColumns {
+	opacity:0;
+	transition: opacity 2s ease-in;
+}
+
+.column.visible{
+	opacity:1;
+}
 
 /* DAZED 100 TEXT */
-
 .dazed100Title h2 {
 	font-family: "nimbus" ;
 	font-size: 3em;
-	display: flex;
-	justify-content: center;
-	margin-left: -0.3em;
 	padding-bottom: 0.5em;
+	position: relative;
+	left: 1em;
 }
 
 .dazed100Title p{
@@ -461,10 +526,8 @@ button:hover{
 .dazed1002023{
 	font-family: "nimbus" ;
 	font-size: 2em;
-	display: flex;
-	justify-content: center;
-	margin-left: 1.5em;
-	padding: 0.3em
+	padding: 0.3em;
+	margin-left: 1.3em;
 }
 
 .throughArticles {
@@ -473,71 +536,47 @@ button:hover{
 	margin-left: 2em;
 }
 
-/* COLUMNS (COLOR BUTTONS) 2TH PAGE */
-
-.column li:nth-of-type(1){
-	background-color: rgb(247, 85, 225);
-}
-
-.column li:nth-of-type(2){
-	background-color: rgb(68, 130, 254);
-}
-
-.column li:nth-of-type(3){
-	background-color: rgb(76, 188, 59);
-}
-
-.column li {
-	color: white;
-}
-
-.column li:nth-of-type(4){
-	background-color: rgb(255, 255, 255);
-	color: black;
-}
-
-
 /* THE CORNER OF THE ARTICLES WITH THE GENRE "MUSIC" FOR EXAMPLE */
 .textCorner{
 	display: grid;
 	position: relative;
-	
 }
 
 .textCorner p{
 	position: absolute;
-	padding: 0.3em;
-	margin: 0.35em;
-	width: 7em;
+	padding: 0.5em;
+	margin: 0.4em;
 	display: flex;
 	justify-content: left;
+	font-family: 'stretchPro';
+	font-size: 0.7em;
+	width: 41%;
+	text-transform: uppercase;
 }
 
 /* SPECIAL ARTICLE WITH OTHER BACKGROUNDS */
-/* MOET DEZE CLASS NAAM VERANDEREN!! */
 /* BLUE ARTICLE */
-.backgroundcolorBlue{
+.articleBigDisplay{
 	background-color: rgb(128,156,252);
 	color: white;
 }
 
-.backgroundcolorBlue img{
+.articleBigDisplay img{
 	width: 21em;
 	display: flex;
 	justify-content: center;
 	margin-left: 0.7em;
 	position: relative;
 	top: 0.5em;
-	
 }
 
 /* RED ARTICLE */
-.backgroundcolorRed{
+.articleBigDisplay2{
 	background-color: rgb(244, 97, 71);
 	color: white;
 }
 
-.backgroundcolorRed img{
+.articleBigDisplay2 img{
 	width: 21em;
 	display: flex;
 	justify-content: center;
@@ -589,7 +628,6 @@ button:hover{
 	top: -0.2em;
 }
 
-
 .lines p{
 	border-top: solid;
 	margin: 0.5em;
@@ -616,11 +654,14 @@ button:hover{
 .scrolling p{
 	background-color: transparent;
 	color: black;
-	width: 10em;
 	margin: 0.9em;
 	margin-bottom: -0.8em;
 	font-family: 'stretchPro';
 	font-size: 0.7em;
+	width: 60%;
+	text-transform: uppercase;
+	position: relative;
+	right: 0.5em;
 }
 
 .scrolling article{
@@ -629,7 +670,7 @@ button:hover{
 
 .scrolling {
 	display: flex;
-	overflow-x:auto;
+	overflow-x:auto; /* zorgt ervoor dat je horizontaal kan scrollen */
 }
 
 
@@ -650,11 +691,15 @@ button:hover{
 	border-bottom: solid;
 	margin: 1em;
 	border-left: white;
+	text-transform: uppercase;
+	font-size: 1em;
 }
 
 .features h4{
-	font-size: 0.9em;
 	margin-top: -1em;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	font-family: 'PLZ';
 }
 
 
@@ -702,7 +747,8 @@ button:hover{
 .beautyLogo{
 	width: 12em;
 	margin: 1em;
-	margin-left: 5em;
+	position: relative;
+	left: 4em;
 }
 
 
@@ -714,99 +760,83 @@ button:hover{
 .dark-mode {
 	background-color: black;
 	color: white;
-  }
+}
 
 .dark-mode-toggle{
 	background-color: rgb(21, 255, 0);
 	border-radius: 2em;
-	margin-left: 20em;
+	position: relative;
+	left: 20em;
 }
+
+/* deze zorgen ervoor dat de nav bar ook verandert naar dark-mode */
+.dark-mode nav {
+    background-color: black; 
+    color: white; 
+}
+
+.dark-mode nav ul {
+    background-color: black; /* Achtergrondkleur voor de navigatie items */
+    color: white; 
+}
+
 
 /* HAMBURGER MENU WHEN ITS NOT CLICKED (NOT VISIBLE) */
-.off-screen-menu{
-	background-color: black;
-	color: white;
-	height: 100vh;
-	width: 100%;
-	display: flex;
-	max-width: 18em;
+/* Off-screen menu: standaard buiten beeld (boven het scherm) */
+.off-screen-menu {
+    background-color: black;
+    color: white;
+    height: 27em;
+    width: 69%;
+    display: flex;
+    max-width: 18em;
     position: fixed;
-    top: 0;
-    right: -450px;
+    top: -30em; 
+    right: 0;
+	left: -2em;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
-    text-align: center;
     font-size: 2rem;
-    transition: .3s ease;
-
+    transition: top 0.5s ease; 
+	text-transform: uppercase;
+	font-family: 'stretchPro';
+	z-index: 1000;
+	overflow: hidden;
 }
 
+/* Menu komt naar beneden */
 .off-screen-menu.active {
- 	right: 0;
+    top: 0; 
 }
 
-/* SEARCH BAR WHEN ITS NOT CLICKED (NOT VISIBLE) */
-.off-screen-search{
-	background-color: #000000;
-	color: white;
-	height: 2em;
-	width: 100%;
-	display: flex;
-	max-width: 18em;
-    position: fixed;
-    top: 0;
-    right: -450px;
-    flex-direction: column;
-    align-items: center;    
-    justify-content: center;
-    text-align: center;
-    font-size: 1em;
-    transition: .3s ease;
-
+.off-screen-menu li{
+	font-size: 0.4em;
+	position: relative;
+	padding: 0.3em;
+	right: 2.5em;
 }
 
-.off-screen-search.active {
- 	right: 0;
+.off-screen-menu li h3{
+	position: relative;
+	right: 0.6em;
+	font-size: 1.8em;
+	font-family: 'stretchPro';
+	padding: 0.1em;
+	border-bottom: 0.1em solid white;
 }
 
-/* CAROUSEL */
-
-/* dit heb ik van caroussel link van teams*/
-.articleCarrousel {
-	margin: 0 ; 
-	padding: 0;
-	/*heb ik dit ndoig? list-style: none;*/
-	display: flex;
-	 /* handmatig scrollen is mogelijk */
-	overflow-x: scroll;
-	overflow-y: hidden;
-	/* snappen als er gescrolled wordt - andere helft bij li */
-	scroll-snap-type: inline mandatory;
-	/* smooth als met js gescrolled wordt */
-	scroll-behavior: smooth;
-  	/* scrollbar zoveel mogelijk verbergen */
-  -webkit-overflow-scrolling: touch; /* voor iOS*/
-  -ms-overflow-style: none; /* voor IE */
-	scrollbar-width: none; /* voor firefox */
-	/* indien het einde of het begin van de pagina bereikt is met scrollen */
-	/* voorkomen dat de pagina gaat scrollen */
-	overscroll-behavior: contain auto;
-	width: 20em;  
+.off-screen-menu li:nth-of-type(2){
+	color:  rgb(21, 255, 0)
 }
 
-.articleCarrousel p{
-	background-color: white;
-	color: black;
+.off-screen-menu li img{
+	width: 20em;
+	position: relative;
+	left: 3em;
+	top: 1em;
 }
 
-.articleCarrousel h3{
-	border-left: white;
-}
-
-.articleCarrousel {
-	width: 21em;
-}
 
 /****************/
 /* footer */
@@ -819,16 +849,6 @@ footer{
 	margin-right: -0.5em;
 }
 
-/*footer ul{
-	list-style: none;
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	left: 1em;
-	margin:0;
-	padding: 0;
-}*/
-
 footer ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Of meer, afhankelijk van het ontwerp */
@@ -840,13 +860,40 @@ footer ul {
 	left: 1em;
 }
 
-
 footer ul h2{
 	display: flex;
 	justify-content: center;
 	font-size: 4.5em;
 	text-transform: uppercase;
 	margin-left: -3.8em;
+}
+
+footer p{
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+footer ul p{
+	position: absolute;
+	margin-top: -6em;
+	margin-left: 2.5em;
+	width: 6em;
+	display: flex;
+	justify-content: center;
+	font-size: 1em;
+	font-family: 'PLZ';
+	align-items: center;
+}
+
+footer ul img{
+	width:12em;
+	margin-left:-0.5em;
+	margin-top: 0em;
+	height: 10em;
+	opacity: 0.60;
 }
 
 /* THE SOCIAL LINKS IN THE FOOTER */
@@ -862,82 +909,10 @@ footer ul h2{
 	margin-top: 0px;
 }
 
-footer p{
-	display: flex;
-	justify-content: center;
-	padding: 5px;
-	text-transform: uppercase;
-	font-size: 13px;
-}
-
-footer ul img{
-	width:12em;
-	margin-left:-0.5em;
-	margin-top: 0em;
-	height: 10em;
-	opacity: 0.60;
-
-}
-
-footer ul p{
-	position: absolute;
-	margin-top: -6em;
-	margin-left: 2.5em;
-	width: 6em;
-	display: flex;
-	justify-content: center;
-	font-size: 1em;
-	font-family: 'PLZ';
-	align-items: center;
-}
-
-
-.emailSubmitPop-up{
-	width: 22em;
-	height: 6em;
-	background-color: rgb(0, 255, 51);
-	position: relative;
-	top: -2em;
-	border-radius: 2em;
-}
-
-.emailSubmitPop-up h3{
-	display: flex;
-	justify-content: center;
-	font-size: var(--font-size-large);
-	position: relative;
-	bottom: -0.5em;
-}
 
 
 
-.textCorner p{
-	font-family: 'stretchPro';
-	font-size: 0.7em;
-	width: 40%;
-	text-transform: uppercase;
-	
-}
 
-.scrolling p{
-	font-family: 'stretchPro';
-	font-size: 0.7em;
-	width: 60%;
-	text-transform: uppercase;
-	position: relative;
-	right: 0.5em;
-}
-
-.features h3{
-	text-transform: uppercase;
-	font-size: 1em;
-}
-
-.features h4{
-	text-transform: uppercase;
-	font-size: 0.8em;
-	font-family: 'PLZ';
-}
 
 
 

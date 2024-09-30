@@ -22,7 +22,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   blauw
 
   #### Je focus:
-  surface plane
+  surface plane 
+  1. read more button, waarbij er een nieuw artikel tevoorschijn komt
+  2. dark-mode button
+  3. wanneer op button wordt geklikt, komt er een andere achtergrond en een neiuwe carrousel met artikelen
+  4. e-mail validator waarbij een popup komt wanneer goed is en wanneer fout is een foutmelding komt
+  5. een fade tijdens het scrollen van de artikelen op de 2e pagina
+  6. logo dat omhoog en omlaag gaat
+  7. een video die de hele tijd afspeelt
  
 </details>
 
@@ -76,13 +83,13 @@ aantekeningen voor testen screenreader van dazed:
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdownschetsFullPage.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets_FullPage.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### dynamisch deel (hamburger menu): 
+  <img src="readme-images/breakdown schets_HamburgerMenu.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### dynamisch deel (e-mail validator): 
+  <img src="readme-images/breakdown schets_MailValidator.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -96,29 +103,18 @@ aantekeningen voor testen screenreader van dazed:
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  hier dit ging goed & dit was lastig 
   
   Het html opzetten ging vrij goed. Toen ik eenmaal begon had ik al best snel mijn html af, omdat het vooral kopiëren en plakken is van afbeeldingen en tekst van de site. Ook ging de basis van mijn css goed. Alleen waar ik even weer moest nadenken hoe het moest, was bij flexbox. Bv mijn navigatiebar, daarvan was ik vergeten hoe dat moest maar uiteindelijk is het wel gelukt. 
   
   Wat alleen nog niet gelukt is is mijn column met buttons. Deze komen nog niet mooi onder/naast elkaar te staan. 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
   vragen:
 
   - Hoe maak ik een verticale lijn
-
   - hoe zorg ik ervoor dat als je op een button klikt er nieuwe artikelen tevoorschijn komen.
-
   - Moeten de buttons in het paarse vlak in in li of alleen button. En kan dit makkelijker in mijn code worden gezet.
-
   - Moet echt alle tekst en articles in mijn site?
 
   ### Verslag van meeting
@@ -149,14 +145,6 @@ aantekeningen voor testen screenreader van dazed:
   Maar vooral ben ik deze week bezig geweest met de homepage. Hier heb ik nu alle content en  zowat alle vormgeving (css) af. Alleen nog een paar kleine dingen die niet helemaal willen werken en ik moet nog een oplossing zien te verzinnen van de classes die ik nu gebruik. 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
   vragen:
   - Mijn scrollbar werkt soms wel en soms niet, hoe zorg ik ervoor dat dit wel de hele tijd werkt?
   - Het font wilt het niet doen, hoe werkt het wel?
@@ -229,14 +217,6 @@ aantekeningen voor testen screenreader van dazed:
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
   vragen:
   - Caroussel. Hoe zorg ik ervoor dat tijdens het scrollen bij de linkerkant hetzelfde bljft?
   - Niet alle svgs willen werken wanneer je op de dark-mode button klikt. Ze veranderen dan niet van kleur, hoe zorg ik ervoor dat dit wel gebeurd?
@@ -293,7 +273,10 @@ aantekeningen voor testen screenreader van dazed:
   Nb. Vermeld de bronnen ook in je code.
 
   1. afbeeldingen en tekst: https://www.dazeddigital.com
-  2. confetti bij submit button: https://confetti.js.org/#
-  3. confetti hoe in code zetten (heb dit alleen als basis gebruikt): https://www.youtube.com/watch?v=5YTK7Mor-wM
-
+  2. email validator : https://mailtrap.io/blog/javascript-email-validation/
+  3. ChatGPT voor mail validator: prompt: maak voorbeeld van een validator voor emailadres invoeren in code
+  3. confetti bij submit button: https://confetti.js.org/#
+  4. confetti hoe in code zetten (heb dit alleen als basis gebruikt): https://www.youtube.com/watch?v=5YTK7Mor-wM
+  5. ChatGPT voor oplossing van het niet gebruiken van een onlick: prompt: how to change background when clicked on button code without onclick
+  6. dark-mode button: https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
 </details>

@@ -1,6 +1,8 @@
 // JavaScript Document
 console.log("hi");
 
+
+// Hamburger Menu //
 const hamburgerMenu = document.querySelector('nav li:nth-of-type(1)');
 
 const offScreenMenu = document.querySelector('.off-screen-menu');
@@ -10,34 +12,17 @@ hamburgerMenu.addEventListener('click', ()  => {
     offScreenMenu.classList.toggle('active');
 })
 
-document.addEventListener("DOMContentLoaded", function() {
-    const toggleButton = document.querySelector("main button:nth-of-type(1)");
-    const bodyElement = document.body;
+// Dark-mode //
 
-    toggleButton.addEventListener("click", function() {
-        bodyElement.classList.toggle("dark-mode");
-    });
+const toggleButton = document.querySelector("main button:nth-of-type(1)");
+const bodyElement = document.body;
+
+toggleButton.addEventListener("click", function() {
+    bodyElement.classList.toggle("dark-mode");
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const articleChangingButton = document.querySelector(".changingColumn button");
-
-    articleChangingButton.addEventListener("click", function() {
-        bodyElement.classList.toggle(".changingButton");
-    });
-});
-
-
-const searchMenu = document.querySelector('nav li:nth-of-type(2)');
-const offScreenSearch = document.querySelector('.off-screen-search');
-
-searchMenu.addEventListener('click', ()  => {
-    searchMenu.classList.toggle('active');
-    offScreenSearch.classList.toggle('active');
-})
-
-
-const showMoreButton = document.querySelector(".showMore");
+// Show more button. When clicked there comes a new article //
+const showMoreButton = document.querySelector(".showMore"); 
 const showMoreButton2 = document.querySelector(".showMore2");
 
 const text = document.querySelector(".textField");
@@ -55,7 +40,8 @@ showMoreButton.addEventListener("click", displayText);
 showMoreButton2.addEventListener("click", displayText2);
 
 
-// Allemaal voor het vak waar de achtergrondkleuren en artikelen veranderen zodra en op een button wordt geklikt. 
+// Allemaal voor het vak waar de achtergrondkleuren en artikelen veranderen zodra en op een button wordt geklikt.
+// All different background buttons // 
 const newBackgroundButton1 = document.querySelector('.changingColumn button:nth-of-type(1)');
 const newBackgroundButton2 = document.querySelector('.changingColumn button:nth-of-type(2)');
 const newBackgroundButton3 = document.querySelector('.changingColumn button:nth-of-type(3)');
@@ -63,20 +49,18 @@ const newBackgroundButton4 = document.querySelector('.changingColumn button:nth-
 const newBackgroundButton5 = document.querySelector('.changingColumn button:nth-of-type(5)');
 const newBackgroundButton6 = document.querySelector('.changingColumn button:nth-of-type(6)');
 
-
+// changes the column background //
 const newColumnBackground = document.querySelector('.changingColumn');
 
+// all the carrousels //
 const articleChange = document.querySelector('.articleCarrousel');
 const secondArticleChange = document.querySelector('.secondArticleCarrousel');
 const thirdArticleChange = document.querySelector('.thirdArticleCarrousel');
 const fourthArticleChange = document.querySelector('.fourthArticleCarrousel');
 const fifthArticleChange = document.querySelector('.fifthArticleCarrousel');
 const sixthArticleChange = document.querySelector('.sixthArticleCarrousel');
-
-
-
-showMoreButton.addEventListener("click", displayText);
  
+// hides all the carrousels //
 function hideAllCarrousels() {
     articleChange.style.display = 'none';
     secondArticleChange.style.display = 'none';
@@ -86,8 +70,7 @@ function hideAllCarrousels() {
     sixthArticleChange.style.display = 'none';
 }
 
-
-
+// when clicked on button, the function will start (hide all the carrousels accept de articlehange and adds a new background) //
 newBackgroundButton1.addEventListener('click', function() {
     newColumnBackground.style.backgroundColor = '#9864dc';
     hideAllCarrousels();
@@ -125,44 +108,56 @@ newBackgroundButton6.addEventListener('click', function() {
 });
 
 
-// mail button confetti
+// mail button confetti //
 
 const submitButton = document.querySelector(".mail button");
 const popUpText = document.querySelector(".emailSubmitPop-up");
 const emailInput = document.getElementById("email");
 
-function isValidEmail(email) {
-    const emailSymbols = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// checks of the email is valid //
+function validEmail(email) {
+    const emailSymbols = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
     return emailSymbols.test(email);
 }
 
-
+// starts confetti when submitbutton 'if' is //
 function startConfetti() {
     confetti();
 }
 
-function displayPopUp() {
+// starts pop-up text when submitbutton 'if' is //
+function displayPopUpText() {
     popUpText.style.display = "block";
 
     setTimeout(() => {
         popUpText.style.display = "none"; 
-    }, 2000); 
+    }, 2000);  // when the 2 seconds are over, the pop-up will stop //
 }
 
 submitButton.addEventListener("click", function() {
-    const email = emailInput.value; 
-
+    const email = emailInput.value;  // checks if the emailinput is valid //
  
-    if (isValidEmail(email)) {
+    if (validEmail(email)) { // if its is valid the confetti & popup function will start //
       
         startConfetti();
-        displayPopUp();
-    } else {
+        displayPopUpText();
+    } else {  // if its unvalid there comes an alert //
     
         alert("Please enter a valid email address.");
     }
 });
 
 
+// video of the 2th page //
+document.addEventListener('DOMContentLoaded', function() {
+    var video = document.querySelector('video');
+    video.play();
+});
 
 
+
+
+window.onload = function(){
+    var article = document.querySelector('.dazed100AllColumns');
+    article.classlist.add('visible');
+}
