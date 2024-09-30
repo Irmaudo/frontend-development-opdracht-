@@ -246,6 +246,7 @@ aantekeningen voor testen screenreader van dazed:
 
   ### Je uitkomst - karakteristiek screenshots:
   <img src="readme-images/myVersion.png" width="375px" alt="uitkomst opdracht">
+  <img src="readme-images/dazed1002thpage.png" width="375px" alt="uitkomst opdracht">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -260,11 +261,7 @@ aantekeningen voor testen screenreader van dazed:
   
   <img src="readme-images/buttonsWithNewArticleCaroussels.png" width="375px" alt="top">
 
-  - Als laatste heb ik ook veel geleerd van deze. Hier komen eigelijk 3 verschillende dingen samen: achtergrondkleuren die veranderen na elke button die je klikt, de artikelen die dan ook veranderen en de artikel carrousel. Hierbij heb ik vooral geleerd, dat je goed moet kijken wat je met welke kan koppelen voor js. bv: newBackgroundButton1.addEventListener('click', function() {
-    newColumnBackground.style.backgroundColor = '#9864dc';
-    hideAllCarrousels();
-    articleChange.style.display = 'block'; 
-  }); Ik had eerst alle carrousels per functie als 'hide' gezet, maar dat zou te veel code zijn en daardoor kan je ze samen koppelen door er een aparte functie van te maken, die je later weer kan koppelen in iets anders. 
+  - Als laatste heb ik ook veel geleerd van deze. Hier komen eigelijk 3 verschillende dingen samen: achtergrondkleuren die veranderen na elke button die je klikt, de artikelen die dan ook veranderen en de artikel carrousel. Hierbij heb ik vooral geleerd, dat je goed moet kijken welke je met elkaar kan koppelen voor js. bv: newBackgroundButton1.addEventListener('click', function() {newColumnBackground.style.backgroundColor = '#9864dc'; hideAllCarrousels(); articleChange.style.display = 'block'; }); Ik had eerst alle carrousels per functie als 'hide' gezet, maar dat zou te veel code zijn en daardoor kan je ze samen koppelen door er een aparte functie van te maken, die je later weer kan koppelen in iets anders. 
 
 
   ### Dit was lastig/Is niet gelukt:
