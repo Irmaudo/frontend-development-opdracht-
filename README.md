@@ -270,6 +270,8 @@ aantekeningen voor testen screenreader van dazed:
 
   <img src="readme-images/artistsArticles.png" width="375px" alt="bummer">
   Helaas is het niet gelukt om zoals op de site een fade-in te maken wanneer je door de artiest articles scrolled. Ik heb heel veel verschillende dingen geprobeerd, maar het wou gewoon niet werken. 
+
+  Wat ik nog meer erg lastig vond was om het font online te krijgen, want als ik de site live zette werkte het font de hele tijd, maar toen ik hem steeds online zette gebeurde er niks. Ik heb veel geprobeerd, zoals (/font/...) (font/...) (...), maar het werkte allemaal niet. 
 </details>
 
 
