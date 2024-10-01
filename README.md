@@ -270,7 +270,7 @@ aantekeningen voor testen screenreader van dazed:
   - Ik ben erg trots op dat dit toch nog is gelukt, omdat het steeds maar niet wou werken en daardoor ook veel tijd koste. 
 
   <img src="readme-images/artistsArticles.png" width="375px" alt="bummer">
-  
+
   - Helaas is het niet gelukt om zoals op de site een fade-in te maken wanneer je door de artiest articles scrolled. Ik heb heel veel verschillende dingen geprobeerd, maar het wou gewoon niet werken. 
 
   - Wat ik nog meer erg lastig vond was om het font online te krijgen, want als ik de site live zette op visual code werkte het font, maar zodra ik hem online zet gebeurde er steeds niks. Ik heb daardoor veel verschillende dingen geprobeerd, zoals (/font/...) (font/...) (...), maar het werkte allemaal niet. Maar het is uiteindelijk wel gelukt, doordat ik het mapje font in het mapje styles heb gezet (ik weet niet alleen niet de reden waarom het nu wel werkt.)
@@ -300,4 +300,5 @@ aantekeningen voor testen screenreader van dazed:
   8. youtube video over hamburgermenu: https://www.youtube.com/watch?v=M498DvQDkJo&list=WL&index=2*/
   9. svg van search-icon kwam van dazed site zelf. 
   10. video in html Chatgpt gevraagd om voorbeeld van hoe ik dit kan doen: 'Maak een voorbeeld waarbij een video in html zit en leg uit wat er gebeurt' 
+  11. youtube video via deel knop en dan embad videolink: https://www.youtube.com/watch?v=DpuyYptBLhs
 </details>
